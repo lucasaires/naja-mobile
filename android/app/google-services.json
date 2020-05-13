@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "930287943905",
+    "firebase_url": "https://mobile-naja.firebaseio.com",
+    "project_id": "mobile-naja",
+    "storage_bucket": "mobile-naja.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930287943905:android:7ebb2bcb0984291298b7a0",
+        "android_client_info": {
+          "package_name": "com.najamobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "930287943905-imm4sl594tdpiv6gqdpom9oa42bknfgf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.najamobile",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "930287943905-pfin76osh7e8jt4oomji5bcnpvro0sfk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAw-RoqkNRcSQ5hxhAVG5EM0f5-CXwQ3Wo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "930287943905-pfin76osh7e8jt4oomji5bcnpvro0sfk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,9 +1,10 @@
-import { createStackNavigation} from 'react-navigation';
+import { createStackNavigation } from 'react-navigation';
 
-import  Login from './pages/Login/index';
-import  Home from './pages/Home/index';
+import Login from './pages/Login';
+import Home from './pages/Home';
 
 export default createStackNavigation({
-    Login,
-    Home,
+  Login,
+  Home,
 });
+

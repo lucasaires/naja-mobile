@@ -7,7 +7,7 @@ import styles from './styles';
 
 export default function Login() {
   function handleLogin() {
-    console.log('foi');
+    console.log('foi sim');
   }
 
   return (

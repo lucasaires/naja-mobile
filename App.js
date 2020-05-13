@@ -1,9 +1,12 @@
 import React from 'react';
+import 'react-native-gesture-handler';
 
-// import Routes from './routes'
+import './src/config/ReactotronConfig';
 
-import Login from './src/pages/Login';
+import Routes from './src/routes';
+
+// import Login from './src/pages/Login';
 
 export default function App() {
-  return <Login />;
+  return <Routes />;
 }

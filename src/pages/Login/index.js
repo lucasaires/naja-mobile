@@ -9,7 +9,7 @@ import api from '../../config/api';
 
 import styles from './styles';
 
-export default function Login() {
+export default function Login({ navigation }) {
   const [key, setKey] = useState('');
 
   GoogleSignin.configure({
@@ -33,7 +33,7 @@ export default function Login() {
       });
 
       setKey('');
-
+      navigation.navigate('Home');
       console.log(user.data, key);
     } catch (error) {
       console.log(error);

@@ -34,12 +34,12 @@ const styles = StyleSheet.create({
   },
 
   input: {
-    padding: 10,
+    // padding: 10,
     marginTop: 20,
     height: 40,
     width: 300,
-    backgroundColor: '#fff',
-    borderRadius: 10,
+    // backgroundColor: '#fff',
+    //    borderRadius: 10,
   },
 
   info: {
@@ -50,7 +50,9 @@ const styles = StyleSheet.create({
 
   googleButton: {
     width: 300,
+    height: 60,
     marginTop: 30,
+    marginBottom: 10,
   },
 });
 

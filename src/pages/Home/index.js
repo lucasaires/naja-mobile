@@ -1,24 +1,36 @@
 import React, { Component } from 'react';
-import { Text, View, TextInput, FlatList, TouchableOpacity } from 'react-native';
+import {StatusBar} from 'react-native';
+import {DefaultTheme, Provider as PaperProvider, Appbar, Text, FAB} from 'react-native-paper'
 import styles from './styles';
 import api from '../../config/api'
 
 export default class Home extends Component {
-    static navigationOption = {
+    static AppbarOption = {
         title : "NajaStore"
     };
-
-
+  
     state = {
         products : [],
-    };
+};
 
     componentDidMount(){
         this.loadProducts();
-    }
+      
+}
 
     loadProducts = async () => {
-        const response = await api.get('/product/:category')
+
+        const {navigation} = this.props
+        const {token} = navigation.state.params
+
+        const response = await api({
+        method: 'GET',
+        url: '/product/all',
+        headers: {
+        Authorization: `Bearer ${token}`
+        }
+    })
+        console.log(response.data)
         const { products } = response.data; 
 
         this.setState([products]);
@@ -40,17 +52,28 @@ export default class Home extends Component {
     )
 
     render() {
+    const theme = {
+        ...DefaultTheme,
+        roundness: 2,
+        colors: {
+            ...DefaultTheme.colors,
+          primary: '#5e5e6e',
+          accent: '#66ff33',
+        },
+        };
 
-    return (
-        <View> 
-            <Text> Pagina Home </Text>
-            <FlatList 
-                data={this.state.products}
-                keyExtractor = {item => item.product_code}
-                renderItem={this.renderItem}
-            /> 
-        </View>
-
+          return (
+          <PaperProvider theme={theme}>
+            <StatusBar
+              backgroundColor="#363640"
+            />
+                <Appbar>
+                   <Text>Catálogo</Text>
+                </Appbar>
+                  <Text> Pagina Home 2</Text>
+            <FAB icon="plus"/>
+            
+          </PaperProvider>
 
     );
     }

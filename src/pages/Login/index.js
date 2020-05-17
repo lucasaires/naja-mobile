@@ -5,7 +5,6 @@ import {
   GoogleSignin,
   GoogleSigninButton,
 } from '@react-native-community/google-signin';
-import { NavigationActions } from 'react-navigation';
 
 import api from '../../config/api';
 
@@ -38,7 +37,7 @@ export default function Login({ navigation }) {
 
       setKey('');
       setLoad(false);
-
+      console.log(accessToken);
       navigation.navigate('Home', { token: user.data.token });
       console.log(user.data, key);
     } catch (error) {

@@ -1,80 +1,119 @@
-import React, { Component } from 'react';
-import {StatusBar} from 'react-native';
-import {DefaultTheme, Provider as PaperProvider, Appbar, Text, FAB} from 'react-native-paper'
+import React, { useState, useEffect } from 'react';
+import {
+  FlatList, StatusBar, View, SafeAreaView,
+} from 'react-native';
+import {
+  DefaultTheme, List, Provider as PaperProvider, Appbar, Text, FAB,
+} from 'react-native-paper';
 import styles from './styles';
-import api from '../../config/api'
+import api from '../../config/api';
 
-export default class Home extends Component {
-    static AppbarOption = {
-        title : "NajaStore"
-    };
-  
-    state = {
-        products : [],
-};
+import Produto from './components/Produto';
 
-    componentDidMount(){
-        this.loadProducts();
-      
-}
+export default function Home({ navigation }) {
+  const [products, setProducts] = useState([]);
+  const [categoria, setCategoria] = useState('all');
+  const [expandedList, setExpandedList] = useState(false);
+  const [categoriaNome, setCategoriaNome] = useState('Todos');
 
-    loadProducts = async () => {
+  const loadProducts = async () => {
+    const { token } = navigation.state.params;
 
-        const {navigation} = this.props
-        const {token} = navigation.state.params
+    const response = await api({
+      method: 'GET',
+      url: `/product/${categoria}`,
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
 
-        const response = await api({
-        method: 'GET',
-        url: '/product/all',
-        headers: {
-        Authorization: `Bearer ${token}`
-        }
-    })
-        console.log(response.data)
-        const { products } = response.data; 
+    const productsLoaded = response.data;
 
-        this.setState([products]);
-    };
+    setProducts(productsLoaded);
+  };
 
-    renderItem = ({item}) => (
-        <View>
-            <Text>{item.image}</Text>
-            <Text>{item.name}</Text>
-            <Text>{item.category}</Text>
-            <Text>{item.price}</Text>
-            <Text>{item.quantity}</Text>
+  useEffect(() => {
+    loadProducts();
+  }, [categoria]);
 
-            <TouchableOpacity onPress = {() =>{}}>
-                <Text> Abrir</Text>
-            </TouchableOpacity>
+  const theme = {
+    ...DefaultTheme,
+    roundness: 2,
+    colors: {
+      ...DefaultTheme.colors,
+      primary: '#40D7BC',
+      accent: '#40D7BC',
+    },
+  };
 
-        </View>
-    )
-
-    render() {
-    const theme = {
-        ...DefaultTheme,
-        roundness: 2,
-        colors: {
-            ...DefaultTheme.colors,
-          primary: '#5e5e6e',
-          accent: '#66ff33',
-        },
-        };
-
-          return (
-          <PaperProvider theme={theme}>
-            <StatusBar
-              backgroundColor="#363640"
+  return (
+    <PaperProvider theme={theme}>
+      <StatusBar
+        backgroundColor="#40D7BC"
+      />
+      <Appbar style={styles.toolbar}>
+        <Text style={styles.cabecalho}>Catálogo</Text>
+      </Appbar>
+      <View style={styles.listContainer}>
+        <List.Section style={styles.inputCategoria}>
+          <List.Accordion
+            title="Categoria"
+            description={categoriaNome}
+            expanded={expandedList}
+            onPress={() => setExpandedList(!expandedList)}
+            left={(props) => <List.Icon {...props} icon="dots-vertical" />}
+          >
+            <List.Item
+              title="Todos"
+              onPress={() => {
+                setCategoria('all');
+                setCategoriaNome('Todos');
+                setExpandedList(false);
+              }}
             />
-                <Appbar>
-                   <Text>Catálogo</Text>
-                </Appbar>
-                  <Text> Pagina Home 2</Text>
-            <FAB icon="plus"/>
-            
-          </PaperProvider>
-
-    );
-    }
-} 
+            <List.Item
+              title="Celulares"
+              onPress={() => {
+                setCategoria('celular');
+                setCategoriaNome('Celulares');
+                setExpandedList(false);
+              }}
+            />
+            <List.Item
+              title="Eletrodomesticos"
+              onPress={() => {
+                setCategoria('eletrodomestico');
+                setCategoriaNome('Eletrodomesticos');
+                setExpandedList(false);
+              }}
+            />
+            <List.Item
+              title="Tv's"
+              onPress={() => {
+                setCategoria('tv');
+                setCategoriaNome('Tvs');
+                setExpandedList(false);
+              }}
+            />
+            <List.Item
+              title="Videogames"
+              onPress={() => {
+                setCategoria('videogame');
+                setCategoriaNome('Videogames');
+                setExpandedList(false);
+              }}
+            />
+          </List.Accordion>
+        </List.Section>
+        <SafeAreaView>
+          <FlatList
+            data={products}
+            keyExtractor={(item) => item.product_code.toString()}
+            renderItem={({ item }) => <Produto id={item.product_key} produto={item} />}
+          />
+        </SafeAreaView>
+        <FAB icon="plus" style={styles.fab} onPress={() => console.log('pressed')} />
+      </View>
+    </PaperProvider>
+  );
+}

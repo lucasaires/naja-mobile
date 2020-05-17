@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     padding: 20,
     flexDirection: 'column',
     alignItems: 'center',
-    backgroundColor: '#5e5e6e',
+    backgroundColor: '#40D7BC',
   },
 
   header: {
@@ -23,28 +23,27 @@ const styles = StyleSheet.create({
   titulo: {
     marginTop: 100,
     fontSize: 32,
-    color: '#66ff33',
+    color: '#FFF',
     fontWeight: 'bold',
   },
 
   bemVindo: {
     textAlign: 'center',
-    color: '#FFF',
+    color: '#000',
     fontSize: 16,
   },
 
   input: {
-    // padding: 10,
     marginTop: 20,
     height: 40,
     width: 300,
-    // backgroundColor: '#fff',
-    //    borderRadius: 10,
+    backgroundColor: '#fff',
+    borderRadius: 0,
   },
 
   info: {
     fontSize: 12,
-    color: '#cecece',
+    color: '#ccc',
     marginTop: 5,
   },
 

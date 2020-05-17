@@ -8,12 +8,14 @@ MERGED from /home/arthur/Documentos/workspace/naja-mobile/android/app/src/main/A
 MERGED from [com.facebook.flipper:flipper:0.33.1] /home/arthur/.gradle/caches/transforms-2/files-2.1/755fc02c93f134596bdf134188a1d182/jetified-flipper-0.33.1/AndroidManifest.xml:8:1-18:12
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.33.1] /home/arthur/.gradle/caches/transforms-2/files-2.1/ddfcd1c0dfc920777fc3a13ae768ec0c/flipper-network-plugin-0.33.1/AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.33.1] /home/arthur/.gradle/caches/transforms-2/files-2.1/10fe3c10a011d88dbc3b85baad4c80ee/flipper-fresco-plugin-0.33.1/AndroidManifest.xml:8:1-15:12
+MERGED from [:react-native-community_async-storage] /home/arthur/Documentos/workspace/naja-mobile/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-community_google-signin] /home/arthur/Documentos/workspace/naja-mobile/node_modules/@react-native-community/google-signin/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-community_masked-view] /home/arthur/Documentos/workspace/naja-mobile/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-gesture-handler] /home/arthur/Documentos/workspace/naja-mobile/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-reanimated] /home/arthur/Documentos/workspace/naja-mobile/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-safe-area-context] /home/arthur/Documentos/workspace/naja-mobile/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] /home/arthur/Documentos/workspace/naja-mobile/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-vector-icons] /home/arthur/Documentos/workspace/naja-mobile/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.62.2] /home/arthur/.gradle/caches/transforms-2/files-2.1/754429a0dbed7158de2a5c0aaaa56586/jetified-react-native-0.62.2/AndroidManifest.xml:2:1-13:12
 MERGED from [com.google.android.material:material:1.1.0] /home/arthur/.gradle/caches/transforms-2/files-2.1/23165c8ebbd887a03d4043767f8039a8/material-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] /home/arthur/.gradle/caches/transforms-2/files-2.1/88ac7a57b77745fd9055f4a0d2b03c0d/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
@@ -183,6 +185,8 @@ MERGED from [com.facebook.flipper:flipper-network-plugin:0.33.1] /home/arthur/.g
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.33.1] /home/arthur/.gradle/caches/transforms-2/files-2.1/ddfcd1c0dfc920777fc3a13ae768ec0c/flipper-network-plugin-0.33.1/AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.33.1] /home/arthur/.gradle/caches/transforms-2/files-2.1/10fe3c10a011d88dbc3b85baad4c80ee/flipper-fresco-plugin-0.33.1/AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.33.1] /home/arthur/.gradle/caches/transforms-2/files-2.1/10fe3c10a011d88dbc3b85baad4c80ee/flipper-fresco-plugin-0.33.1/AndroidManifest.xml:11:5-13:41
+MERGED from [:react-native-community_async-storage] /home/arthur/Documentos/workspace/naja-mobile/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_async-storage] /home/arthur/Documentos/workspace/naja-mobile/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_google-signin] /home/arthur/Documentos/workspace/naja-mobile/node_modules/@react-native-community/google-signin/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-community_google-signin] /home/arthur/Documentos/workspace/naja-mobile/node_modules/@react-native-community/google-signin/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-community_masked-view] /home/arthur/Documentos/workspace/naja-mobile/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
@@ -195,6 +199,8 @@ MERGED from [:react-native-safe-area-context] /home/arthur/Documentos/workspace/
 MERGED from [:react-native-safe-area-context] /home/arthur/Documentos/workspace/naja-mobile/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-screens] /home/arthur/Documentos/workspace/naja-mobile/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-screens] /home/arthur/Documentos/workspace/naja-mobile/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /home/arthur/Documentos/workspace/naja-mobile/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /home/arthur/Documentos/workspace/naja-mobile/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.62.2] /home/arthur/.gradle/caches/transforms-2/files-2.1/754429a0dbed7158de2a5c0aaaa56586/jetified-react-native-0.62.2/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.62.2] /home/arthur/.gradle/caches/transforms-2/files-2.1/754429a0dbed7158de2a5c0aaaa56586/jetified-react-native-0.62.2/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.material:material:1.1.0] /home/arthur/.gradle/caches/transforms-2/files-2.1/23165c8ebbd887a03d4043767f8039a8/material-1.1.0/AndroidManifest.xml:20:5-44

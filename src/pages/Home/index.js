@@ -45,15 +45,15 @@ export default function Home({ navigation }) {
     roundness: 2,
     colors: {
       ...DefaultTheme.colors,
-      primary: '#40D7BC',
-      accent: '#40D7BC',
+      primary: '#4ABDAC',
+      accent: '#4ABDAC',
     },
   };
 
   return (
     <PaperProvider theme={theme}>
       <StatusBar
-        backgroundColor="#40D7BC"
+        backgroundColor="#4ABDAC"
       />
       <Appbar style={styles.toolbar}>
         <Text style={styles.cabecalho}>Catálogo</Text>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Image } from 'react-native';
+import { View, Image, StatusBar } from 'react-native';
 import { ActivityIndicator, Text, TextInput } from 'react-native-paper';
 import {
   GoogleSignin,
@@ -14,6 +14,7 @@ import styles from './styles';
 export default function Login({ navigation }) {
   const [key, setKey] = useState('');
   const [load, setLoad] = useState(false);
+  const [focused, setFocused] = useState(false);
 
   GoogleSignin.configure({
     webClientId: '930287943905-pfin76osh7e8jt4oomji5bcnpvro0sfk.apps.googleusercontent.com',
@@ -38,30 +39,31 @@ export default function Login({ navigation }) {
 
       setKey('');
       setLoad(false);
-      console.log(accessToken);
       navigation.navigate('Home', { token: user.data.token });
-      console.log(user.data, key);
     } catch (error) {
       console.log(error);
     }
   };
 
+
   return (
     <View style={styles.container}>
+      <StatusBar backgroundColor="#4ABDAC" />
       <View style={styles.header}>
         <Image source={Logo} style={styles.logo} />
-        <Text style={styles.titulo}>Naja Eletrônicos</Text>
+        <Text style={styles.titulo}>NAJA ELETRÔNICOS</Text>
+        <Text style={styles.bemVindo}> BEM-VINDO </Text>
       </View>
       <View style={styles.body}>
-        <Text style={styles.bemVindo}>
-          Bem-vindo realize seu login usando sua conta Google.
-        </Text>
         <TextInput
-          underlineColor="#40D7BC"
-          style={styles.input}
+          selectionColor="#F7B733"
+          underlineColor="#F7B733"
+          style={focused ? styles.inputFocus : styles.input}
           defaultValue={key}
           onChangeText={(texto) => setKey(texto)}
           placeholder="Key..."
+          onFocus={() => setFocused(true)}
+          onBlur={() => setFocused(false)}
         />
         <Text style={styles.info}>
           Caso seja seu primeiro login informe a chave de acesso.

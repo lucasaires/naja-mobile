@@ -1,40 +1,49 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
+
+const { width } = Dimensions.get('window');
+// const { height } = Dimensions.get('window');
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 20,
     flexDirection: 'column',
     alignItems: 'center',
     backgroundColor: '#FFF',
   },
 
   header: {
-    marginTop: 70,
-    flex: 1,
+    width,
+    flex: 3,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: '#4ABDAC',
   },
 
   body: {
-    marginTop: 120,
-    flex: 2,
+    flex: 1,
     flexDirection: 'column',
     alignItems: 'center',
   },
 
   titulo: {
-    fontSize: 32,
-    color: '#40D7BC',
-    fontWeight: 'bold',
+    fontSize: 22,
+    color: '#000',
   },
 
   bemVindo: {
+    marginTop: 100,
+    fontWeight: 'bold',
     textAlign: 'center',
-    color: '#000',
-    fontSize: 16,
+    color: '#FFF',
+    fontSize: 32,
   },
-
+  inputFocus: {
+    marginTop: 20,
+    height: 40,
+    width: 300,
+    borderRadius: 0,
+    backgroundColor: '#F7B733',
+  },
   input: {
     marginTop: 20,
     height: 40,
@@ -45,7 +54,7 @@ const styles = StyleSheet.create({
 
   info: {
     fontSize: 12,
-    color: '#ccc',
+    color: '#DFDCE3',
     marginTop: 5,
   },
 

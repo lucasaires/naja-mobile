@@ -1,11 +1,11 @@
 Arguments: 
-  /usr/bin/node /usr/share/yarn/bin/yarn.js add reduz-persist immer
+  /usr/bin/node /usr/share/yarn/bin/yarn.js add axios
 
 PATH: 
-  /home/arthur/.zinit/polaris/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/arthur/Android/Sdk/emulator:/home/arthur/Android/Sdk/tools:/home/arthur/Android/Sdk/tools/bin:/home/arthur/Android/Sdk/platform-tools
+  /home/lucasaires/.local/bin:/home/lucasaires/.local/bin:/home/lucasaires/.local/bin:/home/lucasaires/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/lucasaires/Android/Sdk/tools:/home/lucasaires/Android/Sdk/platform-tools:/home/lucasaires/Android/Sdk/tools:/home/lucasaires/Android/Sdk/platform-tools:/home/lucasaires/Android/Sdk/tools:/home/lucasaires/Android/Sdk/platform-tools:/home/lucasaires/Android/Sdk/tools:/home/lucasaires/Android/Sdk/platform-tools:/home/lucasaires/Android/Sdk/emulator:/home/lucasaires/Android/Sdk/tools:/home/lucasaires/Android/Sdk/tools/bin:/home/lucasaires/Android/Sdk/platform-tools:/home/lucasaires/Android/Sdk/tools:/home/lucasaires/Android/Sdk/platform-tools:/home/lucasaires/Android/Sdk/emulator:/home/lucasaires/Android/Sdk/tools:/home/lucasaires/Android/Sdk/tools/bin:/home/lucasaires/Android/Sdk/platform-tools:/home/lucasaires/Android/Sdk/tools:/home/lucasaires/Android/Sdk/platform-tools
 
 Yarn version: 
-  1.22.4
+  1.21.1
 
 Node version: 
   12.16.3
@@ -14,17 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/reduz-persist: Not found
-      at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:66987:18)
-      at Request.self.callback (/usr/share/yarn/lib/cli.js:140748:22)
-      at Request.emit (events.js:310:20)
-      at Request.<anonymous> (/usr/share/yarn/lib/cli.js:141720:10)
-      at Request.emit (events.js:310:20)
-      at IncomingMessage.<anonymous> (/usr/share/yarn/lib/cli.js:141642:12)
-      at Object.onceWrapper (events.js:416:28)
-      at IncomingMessage.emit (events.js:322:22)
-      at endReadableNT (_stream_readable.js:1187:12)
-      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+  Error: ENOENT: no such file or directory, copyfile '/home/lucasaires/.cache/yarn/v6/npm-mime-2.4.5-d8de2ecb92982dedbb6541c9b6841d7f218ea009-integrity/node_modules/mime/types/other.js' -> '/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/mime/types/other.js'
 
 npm manifest: 
   {
@@ -39,23 +29,29 @@ npm manifest:
       "lint": "eslint ."
     },
     "dependencies": {
+      "@react-native-community/async-storage": "^1.10.1",
       "@react-native-community/google-signin": "^4.0.2",
       "@react-native-community/masked-view": "^0.1.10",
       "@react-navigation/native": "^5.3.0",
       "@react-navigation/stack": "^5.3.3",
       "axios": "^0.19.2",
+      "immer": "^6.0.5",
       "react": "16.11.0",
+      "react-currency-format": "^1.0.0",
       "react-native": "0.62.2",
       "react-native-gesture-handler": "^1.6.1",
+      "react-native-paper": "^3.10.1",
       "react-native-reanimated": "^1.8.0",
       "react-native-safe-area-context": "^1.0.0",
       "react-native-screens": "^2.7.0",
+      "react-native-vector-icons": "^6.6.0",
       "react-navigation": "^4.3.9",
       "react-redux": "^7.2.0",
       "reactotron-react-native": "^5.0.0",
       "reactotron-redux": "^3.1.3",
       "reactotron-redux-saga": "^4.2.3",
       "redux": "^4.0.5",
+      "redux-persist": "^6.0.0",
       "redux-saga": "^1.1.3"
     },
     "devDependencies": {
@@ -748,6 +744,14 @@ Lockfile:
       lodash "^4.17.13"
       to-fast-properties "^2.0.0"
   
+  "@callstack/react-theme-provider@^3.0.5":
+    version "3.0.5"
+    resolved "https://registry.yarnpkg.com/@callstack/react-theme-provider/-/react-theme-provider-3.0.5.tgz#a173e455e9603c9c45357a3b6ace1273086527ca"
+    integrity sha512-Iec+ybWN0FvNj87sD3oWo/49edGUP0UOSdMnzCJEFJIDYr992ECIuOV89burAAh2/ibPCxgLiK6dmgv2mO/8Tg==
+    dependencies:
+      deepmerge "^3.2.0"
+      hoist-non-react-statics "^3.3.0"
+  
   "@cnakazawa/watch@^1.0.3":
     version "1.0.4"
     resolved "https://registry.yarnpkg.com/@cnakazawa/watch/-/watch-1.0.4.tgz#f864ae85004d0fcab6f50be9141c4da368d1656a"
@@ -952,6 +956,13 @@ Lockfile:
       "@types/istanbul-reports" "^1.1.1"
       "@types/yargs" "^15.0.0"
       chalk "^3.0.0"
+  
+  "@react-native-community/async-storage@^1.10.1":
+    version "1.10.1"
+    resolved "https://registry.yarnpkg.com/@react-native-community/async-storage/-/async-storage-1.10.1.tgz#23902625cf146a25b2929d72558caa437c72c4a8"
+    integrity sha512-9wjW4lNAKkNgeQtj4dG2graKoJoiAELvh6QDXZ55ld5J58kOfJIe6ELaGBUtIAoXPpmjsddjpXrfV6af3mN2JA==
+    dependencies:
+      deep-assign "^3.0.0"
   
   "@react-native-community/cli-debugger-ui@^4.8.0":
     version "4.8.0"
@@ -2216,6 +2227,13 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
     integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
   
+  deep-assign@^3.0.0:
+    version "3.0.0"
+    resolved "https://registry.yarnpkg.com/deep-assign/-/deep-assign-3.0.0.tgz#c8e4c4d401cba25550a2f0f486a2e75bc5f219a2"
+    integrity sha512-YX2i9XjJ7h5q/aQ/IM9PEwEnDqETAIYbggmdDB3HLTlSgo1CxPsj6pvhPG68rq6SVE0+p+6Ywsm5fTYNrYtBWw==
+    dependencies:
+      is-obj "^1.0.0"
+  
   deep-is@~0.1.3:
     version "0.1.3"
     resolved "https://registry.yarnpkg.com/deep-is/-/deep-is-0.1.3.tgz#b369d6fb5dbc13eecf524f91b070feedc357cf34"
@@ -3242,6 +3260,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/image-size/-/image-size-0.6.3.tgz#e7e5c65bb534bd7cdcedd6cb5166272a85f75fb2"
     integrity sha512-47xSUiQioGaB96nqtp5/q55m0aBQSQdyIloMOc/x+QVTDZLNmXE892IIDrJ0hM1A5vcNUDD5tDffkSP5lCaIIA==
   
+  immer@^6.0.5:
+    version "6.0.5"
+    resolved "https://registry.yarnpkg.com/immer/-/immer-6.0.5.tgz#77187d13b71c6cee40dde3b8e87a50a7a636d630"
+    integrity sha512-Q2wd90qrgFieIpLzAO2q9NLEdmyp/sr76Ml4Vm5peUKgyTa2CQa3ey8zuzwSKOlKH7grCeGBGUcLLVCVW1aguA==
+  
   import-fresh@^2.0.0:
     version "2.0.0"
     resolved "https://registry.yarnpkg.com/import-fresh/-/import-fresh-2.0.0.tgz#d81355c15612d386c61f9ddd3922d4304822a546"
@@ -3479,6 +3502,11 @@ Lockfile:
     integrity sha1-JP1iAaR4LPUFYcgQJ2r8fRLXEZU=
     dependencies:
       kind-of "^3.0.2"
+  
+  is-obj@^1.0.0:
+    version "1.0.1"
+    resolved "https://registry.yarnpkg.com/is-obj/-/is-obj-1.0.1.tgz#3e4729ac1f5fde025cd7d83a896dab9f4f67db0f"
+    integrity sha1-PkcprB9f3gJc19g6iW2rn09n2w8=
   
   is-plain-object@^2.0.3, is-plain-object@^2.0.4:
     version "2.0.4"
@@ -4235,7 +4263,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
     integrity sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ=
   
-  lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.3.0:
+  lodash@^4.0.0, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.3.0:
     version "4.17.15"
     resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
     integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
@@ -5252,7 +5280,7 @@ Lockfile:
       kleur "^3.0.3"
       sisteransi "^1.0.4"
   
-  prop-types@^15.6.2, prop-types@^15.7.2:
+  prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
     version "15.7.2"
     resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
     integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -5312,6 +5340,13 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
     integrity sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==
   
+  react-currency-format@^1.0.0:
+    version "1.0.0"
+    resolved "https://registry.yarnpkg.com/react-currency-format/-/react-currency-format-1.0.0.tgz#9be9c984c357bf8e847368c5422b5f4d4aa819b3"
+    integrity sha1-m+nJhMNXv46Ec2jFQitfTUqoGbM=
+    dependencies:
+      prop-types "^15.6.0"
+  
   react-devtools-core@^4.0.6:
     version "4.6.0"
     resolved "https://registry.yarnpkg.com/react-devtools-core/-/react-devtools-core-4.6.0.tgz#2443b3c6fac78b801702af188abc6d83d56224e6"
@@ -5345,6 +5380,15 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.2.1.tgz#645e2ffbbb49e80844bb4cbbe34a126fda1e6772"
     integrity sha512-/VbpIEp8tSNNHIvstuA3Swx610whci1Zpc9mqNkqn14DkMbw+ORviln2u0XyHG1kPvvwTNGZY6QpeFwxYaSdbQ==
   
+  react-native-paper@^3.10.1:
+    version "3.10.1"
+    resolved "https://registry.yarnpkg.com/react-native-paper/-/react-native-paper-3.10.1.tgz#4fca72b9f154fc5ad3710d633787c55e878e8f36"
+    integrity sha512-rl1B9z/S3Q+D4lzTqQOVjpKTd7eLOUhxp7HRufsw8lq4hznAAckynelxOkHxZLHyWT1w9SX4Hdv654i4Uo1KEg==
+    dependencies:
+      "@callstack/react-theme-provider" "^3.0.5"
+      color "^3.1.2"
+      react-native-safe-area-view "^0.14.9"
+  
   react-native-reanimated@^1.8.0:
     version "1.8.0"
     resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-1.8.0.tgz#0b5719b20c1fed9aaf8afd9a12e21c9bd46ee428"
@@ -5368,6 +5412,15 @@ Lockfile:
     version "2.7.0"
     resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-2.7.0.tgz#2d3cf3c39a665e9ca1c774264fccdb90e7944047"
     integrity sha512-n/23IBOkrTKCfuUd6tFeRkn3lB2QZ3cmvoubRscR0JU/Zl4/ZyKmwnFmUv1/Fr+2GH/H8UTX59kEKDYYg3dMgA==
+  
+  react-native-vector-icons@^6.6.0:
+    version "6.6.0"
+    resolved "https://registry.yarnpkg.com/react-native-vector-icons/-/react-native-vector-icons-6.6.0.tgz#66cf004918eb05d90778d64bd42077c1800d481b"
+    integrity sha512-MImKVx8JEvVVBnaShMr7/yTX4Y062JZMupht1T+IEgbqBj4aQeQ1z2SH4VHWKNtWtppk4kz9gYyUiMWqx6tNSw==
+    dependencies:
+      lodash "^4.0.0"
+      prop-types "^15.6.2"
+      yargs "^13.2.2"
   
   react-native@0.62.2:
     version "0.62.2"
@@ -5529,6 +5582,11 @@ Lockfile:
     integrity sha512-wlgPA6cCIIg9gKz0fgAPjnzh4yR/LnXovwuo9hvyGvx3h8nX4+/iLZplfUWasXpqD8BdnGnP5njOFjkUwPzvjA==
     dependencies:
       util.promisify "^1.0.0"
+  
+  redux-persist@^6.0.0:
+    version "6.0.0"
+    resolved "https://registry.yarnpkg.com/redux-persist/-/redux-persist-6.0.0.tgz#b4d2972f9859597c130d40d4b146fecdab51b3a8"
+    integrity sha512-71LLMbUq2r02ng2We9S215LtPu3fY0KgaGE0k8WRgl6RkqxtGfl7HUozz1Dftwsb0D/5mZ8dwAaPbtnzfvbEwQ==
   
   redux-saga@^1.1.3:
     version "1.1.3"
@@ -6933,7 +6991,7 @@ Lockfile:
       y18n "^3.2.1 || ^4.0.0"
       yargs-parser "^11.1.1"
   
-  yargs@^13.3.0:
+  yargs@^13.2.2, yargs@^13.3.0:
     version "13.3.2"
     resolved "https://registry.yarnpkg.com/yargs/-/yargs-13.3.2.tgz#ad7ffefec1aa59565ac915f82dccb38a9c31a2dd"
     integrity sha512-AX3Zw5iPruN5ie6xGRIDgqkT+ZhnRlZMLMHAs8tg7nRruy2Nb+i5o9bwghAogtM08q1dpr2LVoS8KSTMYpWXUw==

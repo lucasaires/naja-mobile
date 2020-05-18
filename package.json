@@ -51,5 +51,9 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/lucasaires/naja-mobile.git",
+  "author": "lucasaires <lucas.aires@ccc.ufcg.edu.br>",
+  "license": "MIT"
 }

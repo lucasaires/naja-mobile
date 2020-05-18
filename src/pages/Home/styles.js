@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   listContainer: {
+    paddingBottom: 100,
     backgroundColor: '#FFF',
     flex: 1,
   },

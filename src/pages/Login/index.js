@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View } from 'react-native';
+import { View, Image } from 'react-native';
 import { ActivityIndicator, Text, TextInput } from 'react-native-paper';
 import {
   GoogleSignin,
@@ -8,6 +8,7 @@ import {
 
 import api from '../../config/api';
 
+import Logo from '../../assets/naja.png';
 import styles from './styles';
 
 export default function Login({ navigation }) {
@@ -48,6 +49,7 @@ export default function Login({ navigation }) {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
+        <Image source={Logo} style={styles.logo} />
         <Text style={styles.titulo}>Naja Eletrônicos</Text>
       </View>
       <View style={styles.body}>
@@ -55,6 +57,7 @@ export default function Login({ navigation }) {
           Bem-vindo realize seu login usando sua conta Google.
         </Text>
         <TextInput
+          underlineColor="#40D7BC"
           style={styles.input}
           defaultValue={key}
           onChangeText={(texto) => setKey(texto)}

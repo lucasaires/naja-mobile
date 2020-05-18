@@ -16,9 +16,9 @@ export default function Home({ navigation }) {
   const [expandedList, setExpandedList] = useState(false);
   const [categoriaNome, setCategoriaNome] = useState('Todos');
 
-  const loadProducts = async () => {
-    const { token } = navigation.state.params;
+  const { token } = navigation.state.params;
 
+  const loadProducts = async () => {
     const response = await api({
       method: 'GET',
       url: `/product/${categoria}`,
@@ -35,6 +35,10 @@ export default function Home({ navigation }) {
   useEffect(() => {
     loadProducts();
   }, [categoria]);
+
+  useEffect(() => {
+
+  }, []);
 
   const theme = {
     ...DefaultTheme,
@@ -109,7 +113,13 @@ export default function Home({ navigation }) {
           <FlatList
             data={products}
             keyExtractor={(item) => item.product_code.toString()}
-            renderItem={({ item }) => <Produto id={item.product_key} produto={item} />}
+            renderItem={({ item }) => (
+              <Produto
+                id={item.product_code}
+                produto={item}
+                token={token}
+              />
+            )}
           />
         </SafeAreaView>
         <FAB icon="plus" style={styles.fab} onPress={() => console.log('pressed')} />

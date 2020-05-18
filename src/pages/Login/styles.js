@@ -6,24 +6,26 @@ const styles = StyleSheet.create({
     padding: 20,
     flexDirection: 'column',
     alignItems: 'center',
-    backgroundColor: '#40D7BC',
+    backgroundColor: '#FFF',
   },
 
   header: {
-    flex: 1.5,
+    marginTop: 70,
+    flex: 1,
+    alignItems: 'center',
     justifyContent: 'center',
   },
 
   body: {
+    marginTop: 120,
     flex: 2,
     flexDirection: 'column',
     alignItems: 'center',
   },
 
   titulo: {
-    marginTop: 100,
     fontSize: 32,
-    color: '#FFF',
+    color: '#40D7BC',
     fontWeight: 'bold',
   },
 
@@ -52,6 +54,10 @@ const styles = StyleSheet.create({
     height: 60,
     marginTop: 30,
     marginBottom: 10,
+  },
+  logo: {
+    width: 150,
+    height: 150,
   },
 });
 

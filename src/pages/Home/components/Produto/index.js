@@ -25,8 +25,8 @@ export default function Produto({ produto, token }) {
   }, [quantidade]);
 
   function setColor() {
-    if (quantidade === 0) return 'red';
-    if (quantidade <= 10) return 'orange';
+    if (quantidade === 0) return '#FC4A1A';
+    if (quantidade <= 10) return '#F7B733';
     return '#FFF';
   }
 

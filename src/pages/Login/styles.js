@@ -62,12 +62,13 @@ const styles = StyleSheet.create({
     width: 300,
     height: 60,
     marginTop: 30,
-    marginBottom: 10,
+    marginBottom: 0,
   },
   logo: {
     width: 150,
     height: 150,
   },
+
 });
 
 export default styles;

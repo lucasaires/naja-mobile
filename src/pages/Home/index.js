@@ -50,6 +50,19 @@ export default function Home({ navigation }) {
     },
   };
 
+  async function removeProduto(produto) {
+    await api.delete(
+      `product/${produto.product_code}`,
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      },
+    );
+    const newProducts = products.filter((item) => item !== produto);
+    setProducts(newProducts);
+  }
+
   return (
     <PaperProvider theme={theme}>
       <StatusBar
@@ -118,11 +131,12 @@ export default function Home({ navigation }) {
                 id={item.product_code}
                 produto={item}
                 token={token}
+                removeProduto={removeProduto}
               />
             )}
           />
         </SafeAreaView>
-        <FAB icon="plus" style={styles.fab} onPress={() => console.log('pressed')} />
+        <FAB icon="plus" style={styles.fab} onPress={() => navigation.navigate('NewProduct', { token })} />
       </View>
     </PaperProvider>
   );

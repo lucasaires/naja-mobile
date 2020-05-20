@@ -69,7 +69,7 @@ export default function Login({ navigation }) {
           Caso seja seu primeiro login informe a chave de acesso.
         </Text>
         <GoogleSigninButton disabled={load} onPress={() => signIn()} style={styles.googleButton} />
-        <ActivityIndicator animating={load} color="#fff" />
+        <ActivityIndicator animating={load} color="#F7B733" />
       </View>
     </View>
   );

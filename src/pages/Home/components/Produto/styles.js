@@ -28,6 +28,15 @@ const styles = StyleSheet.create({
     fontSize: 12,
     textAlignVertical: 'center',
   },
+  btnDelete: {
+    borderStyle: 'solid',
+    borderWidth: 1,
+    borderColor: '#DFDCE3',
+    height: 60,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#FC4A1A',
+  },
 });
 
 export default styles;

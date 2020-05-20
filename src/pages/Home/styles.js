@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   cabecalho: {
-    color: '#FC4A1A',
+    color: '#DFDCE3',
     fontWeight: 'bold',
     fontSize: 24,
     textAlign: 'center',

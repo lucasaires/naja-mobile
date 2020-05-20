@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Text, Card, TextInput } from 'react-native-paper';
+import {Button,Icon} from 'native-base'
 import api from '../../../../config/api';
 
 import styles from './styles';
@@ -19,6 +20,17 @@ export default function Produto({ produto, token }) {
     produto = response.data;
     setQuantidade(produto.quantity);
     console.log(quantidade, produto);
+  }
+
+  async function removeProduto(){
+    await api.remove(
+      `product/${produto.product_code}`,
+      {
+        headers:{
+          Authorization: `Bearer ${token}`
+        },
+      },
+    );
   }
 
   useEffect(() => {
@@ -53,6 +65,11 @@ export default function Produto({ produto, token }) {
           onChangeText={(qtd) => setQuantidade(qtd)}
           onBlur={() => updateProduto()}
         />
+
+        <Button  
+        onPress = {() => removeProduto()}> 
+        < Icon name= 'trash' color = '#DFDCE3'> </Icon>
+        </Button>
       </Card.Content>
     </Card>
   );

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-ru/values-ru.xml",
+            "outputFile": "/home/lucasaires/Documentos/empresaJr/mobi/naja-mobile/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-ru/values-ru.xml",
             "map": [
                 {
                     "source": "/home/lucasaires/.gradle/caches/transforms-2/files-2.1/ddd1aa353dc61f1c0a9a4db5fb2ee208/jetified-play-services-basement-16.0.1/res/values-ru/values.xml",

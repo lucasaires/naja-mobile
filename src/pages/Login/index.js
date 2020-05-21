@@ -51,7 +51,6 @@ export default function Login({ navigation }) {
       <StatusBar backgroundColor="#4ABDAC" />
       <View style={styles.header}>
         <Image source={Logo} style={styles.logo} />
-        <Text style={styles.titulo}>NAJA ELETRÔNICOS</Text>
         <Text style={styles.bemVindo}> BEM-VINDO </Text>
       </View>
       <View style={styles.body}>

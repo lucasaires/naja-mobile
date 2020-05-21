@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
   },
 
   bemVindo: {
-    marginTop: 100,
+    marginTop: 10,
     fontWeight: 'bold',
     textAlign: 'center',
     color: '#FFF',
@@ -65,8 +65,8 @@ const styles = StyleSheet.create({
     marginBottom: 0,
   },
   logo: {
-    width: 150,
-    height: 150,
+    width: 350,
+    height: 350,
   },
 
 });

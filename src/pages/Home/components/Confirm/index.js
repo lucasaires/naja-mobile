@@ -12,6 +12,7 @@ export default function Confirm({
         <Paragraph>
           {' '}
           Deseja realmente deletar o produto
+          {' '}
           {produto.name}
         </Paragraph>
       </Dialog.Content>

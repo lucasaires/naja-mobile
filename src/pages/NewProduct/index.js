@@ -49,18 +49,14 @@ export default function NovoProduto({ navigation }) {
 
     <Header style={{backgroundColor: "#4ABDAC"}}>
     <Left>
-      <Button transparent>
+      <Button transparent onPress={() => navigation.navigate('Home', { token })}>
         <Icon name="arrow-back" />
       </Button>
     </Left>
     <Body>
       <Title >Cadastar Produto</Title>
     </Body>
-    <Right>
-      <Button transparent>
-        <Text>Cancel</Text>
-      </Button>
-    </Right>
+  
   </Header>
 
   <Content>
@@ -97,9 +93,9 @@ export default function NovoProduto({ navigation }) {
           </Form>
         </Content>
 
-        <View>
+        <View >
 
-        <Button full success onPress={() => {}}>
+        <Button full success >
             <Text>Cadastrar</Text>
         </Button>
 

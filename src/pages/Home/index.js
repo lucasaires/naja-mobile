@@ -5,6 +5,8 @@ import {
 import {
   DefaultTheme, List, Provider as PaperProvider, Appbar, Text, FAB,
 } from 'react-native-paper';
+
+import {Rigth, Button, Header} from "native-base";
 import styles from './styles';
 import api from '../../config/api';
 
@@ -63,7 +65,7 @@ export default function Home({ navigation }) {
     setProducts(newProducts);
   }
 
-  return (
+  return ( 
     <PaperProvider theme={theme}>
       <StatusBar
         backgroundColor="#4ABDAC"

@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { Left } from 'native-base';
 
 const styles = StyleSheet.create({
   fab: {
@@ -25,6 +26,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF',
     flex: 1,
   },
+
+  buttonOut: {
+    backgroundColor:'#4ABDAC',
+    textAlign: 'ritgh',
+  }
 });
 
 export default styles;

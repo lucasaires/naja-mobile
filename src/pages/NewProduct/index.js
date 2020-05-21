@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import {
-  StatusBar, View, SafeAreaView, TextInput, Button,
-} from 'react-native';
-import {
-  DefaultTheme, List, Provider as PaperProvider, Appbar, Text, FAB,
-} from 'react-native-paper';
+import { Container, Header, Body, Title, Right, Button, Icon, 
+  Left, Content, Form, Item, Label, Input } from "native-base";
+import {View, TextInput,} from 'react-native';
+import {Text} from 'react-native-paper';
 
 import styles from './styles';
 import api from '../../config/api';
+import { color } from 'react-native-reanimated';
 
 export default function NovoProduto({ navigation }) {
   const [code, setCode] = useState('');
@@ -40,51 +39,73 @@ export default function NovoProduto({ navigation }) {
     console.log(produto);
   }
 
+
   useEffect(() => {
   }, []);
 
 
   return (
+    <Container >
 
-    <View>
-      <TextInput
-        style={styles.containtInput}
-        placeholder="Codigo do Produto"
-        defaultValue={code}
-        onChangeText={(text) => setCode(text)}
-      />
+    <Header style={{backgroundColor: "#4ABDAC"}}>
+    <Left>
+      <Button transparent>
+        <Icon name="arrow-back" />
+      </Button>
+    </Left>
+    <Body>
+      <Title >Cadastar Produto</Title>
+    </Body>
+    <Right>
+      <Button transparent>
+        <Text>Cancel</Text>
+      </Button>
+    </Right>
+  </Header>
 
-      <TextInput
-        style={styles.containtInput}
-        placeholder="Nome do Produto"
-        defaultValue={nome}
-        onChangeText={(text) => setNome(text)}
-      />
+  <Content>
+  <Form>
+            <Item floatingLabel>
+              <Label>Código:</Label>
+              <Input defaultValue={code} onChangeText={(text) => setCode(text)}/>
+            </Item>
 
-      <TextInput
-        style={styles.containtInput}
-        placeholder="Categoria"
-        defaultValue={categoria}
-        onChangeText={(text) => setCategoria(text)}
-      />
+            <Item floatingLabel>
+              <Label>Nome:</Label>
+              <Input defaultValue={nome} onChangeText={(text) => setNome(text)}/>
+            </Item>
 
-      <TextInput
-        style={styles.containtInput}
-        placeholder="Preço"
-        defaultValue={preco}
-        onChangeText={(text) => setPreco(text)}
-      />
+            <Item floatingLabel>
+              <Label>Categoria:</Label>
+              <Input defaultValue={categoria} onChangeText={(text) => setCategoria(text)}/>
+            </Item>
 
-      <TextInput
-        style={styles.containtInput}
-        placeholder="Quantidade"
-        defaultValue={quantidade}
-        onChangeText={(text) => setQuantidade(text)}
-      />
+            <Item floatingLabel>
+              <Label>Preço:</Label>
+              <Input textContentType ={Number} defaultValue={preco} onChangeText={(text) => setPreco(text)} />
+            </Item>
 
-      <View>
-        <Button onPress={() => {}} title="Cadastrar Produto" />
-      </View>
-    </View>
+            <Item floatingLabel>
+              <Label>Quantidade:</Label>
+              <Input textContentType ={Number} defaultValue={quantidade} onChangeText={(text) => setQuantidade(text)}/>
+            </Item>
+            
+            <Item floatingLabel last>
+              <Label>Imagem</Label>
+              <Input />
+            </Item>
+          </Form>
+        </Content>
+
+        <View>
+
+        <Button full success onPress={() => {}}>
+            <Text>Cadastrar</Text>
+        </Button>
+
+      </View>   
+
+    </Container>
+
   );
 }

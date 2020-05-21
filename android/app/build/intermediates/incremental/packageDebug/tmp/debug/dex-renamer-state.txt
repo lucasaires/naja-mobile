@@ -1,4 +1,4 @@
-#Wed May 20 17:24:52 BRT 2020
-base.0=/home/arthur/Documentos/workspace/naja-mobile/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+#Thu May 21 12:06:44 BRT 2020
+base.0=/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

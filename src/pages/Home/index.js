@@ -3,14 +3,14 @@ import {
   FlatList, StatusBar, View, SafeAreaView,
 } from 'react-native';
 import {
-  DefaultTheme, List, Provider as PaperProvider, Appbar, Text, FAB,
+  DefaultTheme, List, Provider as PaperProvider, Appbar, Text, FAB, Button
 } from 'react-native-paper';
 
-import {Rigth, Button, Header} from "native-base";
 import styles from './styles';
 import api from '../../config/api';
 
 import Produto from './components/Produto';
+import { Content, Right } from 'native-base';
 
 export default function Home({ navigation }) {
   const [products, setProducts] = useState([]);
@@ -53,6 +53,7 @@ export default function Home({ navigation }) {
   };
 
   async function removeProduto(produto) {
+
     await api.delete(
       `product/${produto.product_code}`,
       {
@@ -67,12 +68,18 @@ export default function Home({ navigation }) {
 
   return ( 
     <PaperProvider theme={theme}>
+
+      <Appbar.Header> 
       <StatusBar
         backgroundColor="#4ABDAC"
       />
-      <Appbar style={styles.toolbar}>
-        <Text style={styles.cabecalho}>Catálogo</Text>
-      </Appbar>
+
+      <Appbar.BackAction color = {'#FFF'}  onPress={()=> navigation.navigate('Login')}/>
+
+      <Appbar.Content title="Catálogo" subtitle ="NajaStore" color ='#DFDCE3' style={styles.cabecalho}>
+      </Appbar.Content>
+      </Appbar.Header>
+  
       <View style={styles.listContainer}>
         <List.Section style={styles.inputCategoria}>
           <List.Accordion

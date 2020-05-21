@@ -13,10 +13,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   cabecalho: {
-    color: '#DFDCE3',
     fontWeight: 'bold',
-    fontSize: 24,
-    textAlign: 'center',
+    alignItems: 'center'
+
   },
   inputCategoria: {
     marginTop: 10,
@@ -28,8 +27,8 @@ const styles = StyleSheet.create({
   },
 
   buttonOut: {
-    backgroundColor:'#4ABDAC',
-    textAlign: 'ritgh',
+    color: '#DFDCE3',
+    backgroundColor: '#4ABDAC'
   }
 });
 

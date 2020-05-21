@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Header, Body, Title, Right, Button, Icon, 
   Left, Content, Form, Item, Label, Input } from "native-base";
-import {View, TextInput,} from 'react-native';
+import {View} from 'react-native';
 import {Text} from 'react-native-paper';
 
 import styles from './styles';

@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-#Thu May 21 12:06:44 BRT 2020
-base.0=/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
-=======
-#Thu May 21 00:05:10 BRT 2020
+#Thu May 21 22:51:49 BRT 2020
 base.0=/home/arthur/Documentos/workspace/naja-mobile/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
->>>>>>> cd6f4f052763bf601bfbf5bbf786054183305252
 path.0=classes.dex
 renamed.0=classes.dex

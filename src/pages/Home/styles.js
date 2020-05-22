@@ -14,8 +14,7 @@ const styles = StyleSheet.create({
   },
   cabecalho: {
     fontWeight: 'bold',
-    alignItems: 'center'
-
+    alignItems: 'center',
   },
   inputCategoria: {
     marginTop: 10,
@@ -28,8 +27,8 @@ const styles = StyleSheet.create({
 
   buttonOut: {
     color: '#DFDCE3',
-    backgroundColor: '#4ABDAC'
-  }
+    backgroundColor: '#4ABDAC',
+  },
 });
 
 export default styles;

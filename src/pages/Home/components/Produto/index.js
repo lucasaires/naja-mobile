@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { AsyncStorage, useState, useEffect } from 'react';
 import {
   Text, Card, TextInput, Portal,
 } from 'react-native-paper';
@@ -59,7 +59,10 @@ export default function Produto({
       </Portal>
       <Card>
         <Card.Title title={produto.name} />
-        <Card.Cover source={{ uri: `https://controlenaja.herokuapp.com/image/${produto.product_code}` }} />
+        <Card.Cover
+          resizeMode="center"
+          source={{ uri: `https://controlenaja.herokuapp.com/image/${produto.product_code}` }}
+        />
         <Card.Content style={styles.cardInfos}>
           <Text style={styles.preco}>
             Preço: R$

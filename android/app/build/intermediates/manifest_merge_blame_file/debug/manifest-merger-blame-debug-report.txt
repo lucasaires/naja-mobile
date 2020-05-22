@@ -9,98 +9,123 @@
 9        android:targetSdkVersion="28" />
 10
 11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-11-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/debug/AndroidManifest.xml:5:5-77
-11-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/debug/AndroidManifest.xml:5:22-75
+11-->/home/arthur/Documentos/workspace/naja-mobile/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/home/arthur/Documentos/workspace/naja-mobile/android/app/src/debug/AndroidManifest.xml:5:22-75
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:4:5-67
-12-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:4:22-64
-13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-13-->[com.facebook.flipper:flipper:0.33.1] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/e174a483a52d7de955e3129e30891e2e/jetified-flipper-0.33.1/AndroidManifest.xml:16:5-76
-13-->[com.facebook.flipper:flipper:0.33.1] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/e174a483a52d7de955e3129e30891e2e/jetified-flipper-0.33.1/AndroidManifest.xml:16:22-73
-14
-15    <application
-15-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:6:5-25:19
-16        android:name="com.najamobile.MainApplication"
-16-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:7:7-38
-17        android:allowBackup="false"
-17-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:11:7-34
-18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-18-->[androidx.core:core:1.1.0] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/1ebc22047c91feef5a9af0a86929bf31/core-1.1.0/AndroidManifest.xml:24:18-86
-19        android:debuggable="true"
-20        android:icon="@mipmap/ic_launcher"
-20-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:9:7-41
-21        android:label="@string/app_name"
-21-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:8:7-39
-22        android:roundIcon="@mipmap/ic_launcher_round"
-22-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:10:7-52
-23        android:theme="@style/AppTheme"
-23-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:12:7-38
-24        android:usesCleartextTraffic="true" >
-24-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/debug/AndroidManifest.xml:7:18-53
-25        <activity
-25-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:13:7-23:18
-26            android:name="com.najamobile.MainActivity"
-26-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:14:9-37
-27            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
-27-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:16:9-86
-28            android:label="@string/app_name"
-28-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:15:9-41
-29            android:launchMode="singleTask"
-29-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:17:9-40
-30            android:windowSoftInputMode="adjustResize" >
-30-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:18:9-51
-31            <intent-filter>
-31-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:19:9-22:25
-32                <action android:name="android.intent.action.MAIN" />
-32-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:20:13-65
-32-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:20:21-62
-33
-34                <category android:name="android.intent.category.LAUNCHER" />
-34-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:21:13-73
-34-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:21:23-70
-35            </intent-filter>
-36        </activity>
-37        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-37-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:24:7-84
-37-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:24:17-81
-38        <activity
-38-->[com.google.android.gms:play-services-auth:16.0.1] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/85d3f7a1ce3e589b50069e68f1657999/jetified-play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
-39            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-39-->[com.google.android.gms:play-services-auth:16.0.1] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/85d3f7a1ce3e589b50069e68f1657999/jetified-play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
-40            android:excludeFromRecents="true"
-40-->[com.google.android.gms:play-services-auth:16.0.1] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/85d3f7a1ce3e589b50069e68f1657999/jetified-play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
-41            android:exported="false"
-41-->[com.google.android.gms:play-services-auth:16.0.1] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/85d3f7a1ce3e589b50069e68f1657999/jetified-play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
-42            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-42-->[com.google.android.gms:play-services-auth:16.0.1] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/85d3f7a1ce3e589b50069e68f1657999/jetified-play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
-43        <!--
-44            Service handling Google Sign-In user revocation. For apps that do not integrate with
-45            Google Sign-In, this service will never be started.
-46        -->
-47        <service
-47-->[com.google.android.gms:play-services-auth:16.0.1] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/85d3f7a1ce3e589b50069e68f1657999/jetified-play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
-48            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-48-->[com.google.android.gms:play-services-auth:16.0.1] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/85d3f7a1ce3e589b50069e68f1657999/jetified-play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
-49            android:exported="true"
-49-->[com.google.android.gms:play-services-auth:16.0.1] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/85d3f7a1ce3e589b50069e68f1657999/jetified-play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
-50            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
-50-->[com.google.android.gms:play-services-auth:16.0.1] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/85d3f7a1ce3e589b50069e68f1657999/jetified-play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
-51
-52        <activity
-52-->[com.google.android.gms:play-services-base:16.0.1] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/2e4ba10f1d918bac62961b42c27119d9/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
-53            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-53-->[com.google.android.gms:play-services-base:16.0.1] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/2e4ba10f1d918bac62961b42c27119d9/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+12-->/home/arthur/Documentos/workspace/naja-mobile/android/app/src/main/AndroidManifest.xml:4:5-67
+12-->/home/arthur/Documentos/workspace/naja-mobile/android/app/src/main/AndroidManifest.xml:4:22-64
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->/home/arthur/Documentos/workspace/naja-mobile/android/app/src/main/AndroidManifest.xml:5:5-65
+13-->/home/arthur/Documentos/workspace/naja-mobile/android/app/src/main/AndroidManifest.xml:5:22-62
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->/home/arthur/Documentos/workspace/naja-mobile/android/app/src/main/AndroidManifest.xml:6:5-80
+14-->/home/arthur/Documentos/workspace/naja-mobile/android/app/src/main/AndroidManifest.xml:6:22-78
+15    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+15-->[com.facebook.flipper:flipper:0.33.1] /home/arthur/.gradle/caches/transforms-2/files-2.1/d439969309b60db8db327eceb06bb719/jetified-flipper-0.33.1/AndroidManifest.xml:16:5-76
+15-->[com.facebook.flipper:flipper:0.33.1] /home/arthur/.gradle/caches/transforms-2/files-2.1/d439969309b60db8db327eceb06bb719/jetified-flipper-0.33.1/AndroidManifest.xml:16:22-73
+16
+17    <application
+17-->/home/arthur/Documentos/workspace/naja-mobile/android/app/src/main/AndroidManifest.xml:8:5-27:19
+18        android:name="com.najamobile.MainApplication"
+18-->/home/arthur/Documentos/workspace/naja-mobile/android/app/src/main/AndroidManifest.xml:9:7-38
+19        android:allowBackup="false"
+19-->/home/arthur/Documentos/workspace/naja-mobile/android/app/src/main/AndroidManifest.xml:13:7-34
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.1.0] /home/arthur/.gradle/caches/transforms-2/files-2.1/1ebc22047c91feef5a9af0a86929bf31/core-1.1.0/AndroidManifest.xml:24:18-86
+21        android:debuggable="true"
+22        android:icon="@mipmap/ic_launcher"
+22-->/home/arthur/Documentos/workspace/naja-mobile/android/app/src/main/AndroidManifest.xml:11:7-41
+23        android:label="@string/app_name"
+23-->/home/arthur/Documentos/workspace/naja-mobile/android/app/src/main/AndroidManifest.xml:10:7-39
+24        android:roundIcon="@mipmap/ic_launcher_round"
+24-->/home/arthur/Documentos/workspace/naja-mobile/android/app/src/main/AndroidManifest.xml:12:7-52
+25        android:theme="@style/AppTheme"
+25-->/home/arthur/Documentos/workspace/naja-mobile/android/app/src/main/AndroidManifest.xml:14:7-38
+26        android:usesCleartextTraffic="true" >
+26-->/home/arthur/Documentos/workspace/naja-mobile/android/app/src/debug/AndroidManifest.xml:7:18-53
+27        <activity
+27-->/home/arthur/Documentos/workspace/naja-mobile/android/app/src/main/AndroidManifest.xml:15:7-25:18
+28            android:name="com.najamobile.MainActivity"
+28-->/home/arthur/Documentos/workspace/naja-mobile/android/app/src/main/AndroidManifest.xml:16:9-37
+29            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+29-->/home/arthur/Documentos/workspace/naja-mobile/android/app/src/main/AndroidManifest.xml:18:9-86
+30            android:label="@string/app_name"
+30-->/home/arthur/Documentos/workspace/naja-mobile/android/app/src/main/AndroidManifest.xml:17:9-41
+31            android:launchMode="singleTask"
+31-->/home/arthur/Documentos/workspace/naja-mobile/android/app/src/main/AndroidManifest.xml:19:9-40
+32            android:windowSoftInputMode="adjustResize" >
+32-->/home/arthur/Documentos/workspace/naja-mobile/android/app/src/main/AndroidManifest.xml:20:9-51
+33            <intent-filter>
+33-->/home/arthur/Documentos/workspace/naja-mobile/android/app/src/main/AndroidManifest.xml:21:9-24:25
+34                <action android:name="android.intent.action.MAIN" />
+34-->/home/arthur/Documentos/workspace/naja-mobile/android/app/src/main/AndroidManifest.xml:22:13-65
+34-->/home/arthur/Documentos/workspace/naja-mobile/android/app/src/main/AndroidManifest.xml:22:21-62
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->/home/arthur/Documentos/workspace/naja-mobile/android/app/src/main/AndroidManifest.xml:23:13-73
+36-->/home/arthur/Documentos/workspace/naja-mobile/android/app/src/main/AndroidManifest.xml:23:23-70
+37            </intent-filter>
+38        </activity>
+39        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+39-->/home/arthur/Documentos/workspace/naja-mobile/android/app/src/main/AndroidManifest.xml:26:7-84
+39-->/home/arthur/Documentos/workspace/naja-mobile/android/app/src/main/AndroidManifest.xml:26:17-81
+40
+41        <provider
+41-->[:react-native-image-picker] /home/arthur/Documentos/workspace/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:9-18:20
+42            android:name="com.imagepicker.FileProvider"
+42-->[:react-native-image-picker] /home/arthur/Documentos/workspace/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-56
+43            android:authorities="com.najamobile.provider"
+43-->[:react-native-image-picker] /home/arthur/Documentos/workspace/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-60
+44            android:exported="false"
+44-->[:react-native-image-picker] /home/arthur/Documentos/workspace/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-37
+45            android:grantUriPermissions="true" >
+45-->[:react-native-image-picker] /home/arthur/Documentos/workspace/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-47
+46            <meta-data
+46-->[:react-native-image-picker] /home/arthur/Documentos/workspace/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-17:58
+47                android:name="android.support.FILE_PROVIDER_PATHS"
+47-->[:react-native-image-picker] /home/arthur/Documentos/workspace/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:17-67
+48                android:resource="@xml/provider_paths" />
+48-->[:react-native-image-picker] /home/arthur/Documentos/workspace/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-55
+49        </provider>
+50
+51        <activity
+51-->[com.google.android.gms:play-services-auth:16.0.1] /home/arthur/.gradle/caches/transforms-2/files-2.1/f6ba5ed38262723c37ed1bf1477630c1/jetified-play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
+52            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+52-->[com.google.android.gms:play-services-auth:16.0.1] /home/arthur/.gradle/caches/transforms-2/files-2.1/f6ba5ed38262723c37ed1bf1477630c1/jetified-play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
+53            android:excludeFromRecents="true"
+53-->[com.google.android.gms:play-services-auth:16.0.1] /home/arthur/.gradle/caches/transforms-2/files-2.1/f6ba5ed38262723c37ed1bf1477630c1/jetified-play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
 54            android:exported="false"
-54-->[com.google.android.gms:play-services-base:16.0.1] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/2e4ba10f1d918bac62961b42c27119d9/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+54-->[com.google.android.gms:play-services-auth:16.0.1] /home/arthur/.gradle/caches/transforms-2/files-2.1/f6ba5ed38262723c37ed1bf1477630c1/jetified-play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
 55            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-55-->[com.google.android.gms:play-services-base:16.0.1] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/2e4ba10f1d918bac62961b42c27119d9/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
-56
-57        <meta-data
-57-->[com.google.android.gms:play-services-basement:16.0.1] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/8c6214300c9b287bc79b96d0d78cc88b/jetified-play-services-basement-16.0.1/AndroidManifest.xml:23:9-25:69
-58            android:name="com.google.android.gms.version"
-58-->[com.google.android.gms:play-services-basement:16.0.1] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/8c6214300c9b287bc79b96d0d78cc88b/jetified-play-services-basement-16.0.1/AndroidManifest.xml:24:13-58
-59            android:value="@integer/google_play_services_version" />
-59-->[com.google.android.gms:play-services-basement:16.0.1] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/8c6214300c9b287bc79b96d0d78cc88b/jetified-play-services-basement-16.0.1/AndroidManifest.xml:25:13-66
-60    </application>
-61
-62</manifest>
+55-->[com.google.android.gms:play-services-auth:16.0.1] /home/arthur/.gradle/caches/transforms-2/files-2.1/f6ba5ed38262723c37ed1bf1477630c1/jetified-play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
+56        <!--
+57            Service handling Google Sign-In user revocation. For apps that do not integrate with
+58            Google Sign-In, this service will never be started.
+59        -->
+60        <service
+60-->[com.google.android.gms:play-services-auth:16.0.1] /home/arthur/.gradle/caches/transforms-2/files-2.1/f6ba5ed38262723c37ed1bf1477630c1/jetified-play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
+61            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+61-->[com.google.android.gms:play-services-auth:16.0.1] /home/arthur/.gradle/caches/transforms-2/files-2.1/f6ba5ed38262723c37ed1bf1477630c1/jetified-play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
+62            android:exported="true"
+62-->[com.google.android.gms:play-services-auth:16.0.1] /home/arthur/.gradle/caches/transforms-2/files-2.1/f6ba5ed38262723c37ed1bf1477630c1/jetified-play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
+63            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+63-->[com.google.android.gms:play-services-auth:16.0.1] /home/arthur/.gradle/caches/transforms-2/files-2.1/f6ba5ed38262723c37ed1bf1477630c1/jetified-play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
+64
+65        <activity
+65-->[com.google.android.gms:play-services-base:16.0.1] /home/arthur/.gradle/caches/transforms-2/files-2.1/6f2d1a70c2e252a9746c7e19b530971e/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+66            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+66-->[com.google.android.gms:play-services-base:16.0.1] /home/arthur/.gradle/caches/transforms-2/files-2.1/6f2d1a70c2e252a9746c7e19b530971e/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+67            android:exported="false"
+67-->[com.google.android.gms:play-services-base:16.0.1] /home/arthur/.gradle/caches/transforms-2/files-2.1/6f2d1a70c2e252a9746c7e19b530971e/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+68            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+68-->[com.google.android.gms:play-services-base:16.0.1] /home/arthur/.gradle/caches/transforms-2/files-2.1/6f2d1a70c2e252a9746c7e19b530971e/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+69
+70        <meta-data
+70-->[com.google.android.gms:play-services-basement:16.0.1] /home/arthur/.gradle/caches/transforms-2/files-2.1/3a481959a312f4c047171a67298fa95b/jetified-play-services-basement-16.0.1/AndroidManifest.xml:23:9-25:69
+71            android:name="com.google.android.gms.version"
+71-->[com.google.android.gms:play-services-basement:16.0.1] /home/arthur/.gradle/caches/transforms-2/files-2.1/3a481959a312f4c047171a67298fa95b/jetified-play-services-basement-16.0.1/AndroidManifest.xml:24:13-58
+72            android:value="@integer/google_play_services_version" />
+72-->[com.google.android.gms:play-services-basement:16.0.1] /home/arthur/.gradle/caches/transforms-2/files-2.1/3a481959a312f4c047171a67298fa95b/jetified-play-services-basement-16.0.1/AndroidManifest.xml:25:13-66
+73    </application>
+74
+75</manifest>

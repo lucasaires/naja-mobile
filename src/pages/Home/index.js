@@ -3,14 +3,13 @@ import {
   FlatList, StatusBar, View, SafeAreaView,
 } from 'react-native';
 import {
-  DefaultTheme, List, Provider as PaperProvider, Appbar, Text, FAB, Button
+  DefaultTheme, List, Provider as PaperProvider, Appbar, FAB,
 } from 'react-native-paper';
 
 import styles from './styles';
 import api from '../../config/api';
 
 import Produto from './components/Produto';
-import { Content, Right } from 'native-base';
 
 export default function Home({ navigation }) {
   const [products, setProducts] = useState([]);
@@ -39,7 +38,6 @@ export default function Home({ navigation }) {
   }, [categoria]);
 
   useEffect(() => {
-
   }, []);
 
   const theme = {
@@ -53,7 +51,6 @@ export default function Home({ navigation }) {
   };
 
   async function removeProduto(produto) {
-
     await api.delete(
       `product/${produto.product_code}`,
       {
@@ -66,20 +63,19 @@ export default function Home({ navigation }) {
     setProducts(newProducts);
   }
 
-  return ( 
+  return (
     <PaperProvider theme={theme}>
 
-      <Appbar.Header> 
-      <StatusBar
-        backgroundColor="#4ABDAC"
-      />
+      <Appbar.Header>
+        <StatusBar
+          backgroundColor="#4ABDAC"
+        />
 
-      <Appbar.BackAction color = {'#FFF'}  onPress={()=> navigation.navigate('Login')}/>
+        <Appbar.Content title="Catálogo" subtitle="NajaStore" color="#DFDCE3" style={styles.cabecalho} />
+        <Appbar.Action icon="logout-variant" color="#FC4A1A" onPress={() => navigation.navigate('Login')} />
 
-      <Appbar.Content title="Catálogo" subtitle ="NajaStore" color ='#DFDCE3' style={styles.cabecalho}>
-      </Appbar.Content>
       </Appbar.Header>
-  
+
       <View style={styles.listContainer}>
         <List.Section style={styles.inputCategoria}>
           <List.Accordion

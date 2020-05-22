@@ -1,15 +1,20 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Header, Body, Title, Right, Button, Icon, 
-  Left, Content, Form, Item, Label, Input } from "native-base";
-import {View} from 'react-native';
-import {Text} from 'react-native-paper';
+import {
+  Container, Header, Body, Title, Icon,
+  Left, Content, Form, Item, Label, Input,
+} from 'native-base';
+import {
+  View, StatusBar, Image, Platform,
+} from 'react-native';
+import { Text, Button } from 'react-native-paper';
+import ImagePicker from 'react-native-image-picker';
 
 import styles from './styles';
 import api from '../../config/api';
-import { color } from 'react-native-reanimated';
+import imageOptions from '../../config/imagepicker';
 
 export default function NovoProduto({ navigation }) {
-  const [code, setCode] = useState('');
+  const [code, setCode] = useState(0);
   const [imagem, setImagem] = useState('');
   const [nome, setNome] = useState('');
   const [categoria, setCategoria] = useState('');
@@ -19,87 +24,110 @@ export default function NovoProduto({ navigation }) {
   const { token } = navigation.state.params;
 
   async function createProduct() {
-    const response = await api.post(
-      '/product/',
-      {
-        product_code: code,
-        image: imagem,
-        name: nome,
-        category: categoria,
-        price: preco,
-        quantity: quantidade,
-      }, {
+    const formData = new FormData();
 
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
+    const photo = {
+      name: imagem.fileName,
+      type: imagem.type,
+      uri: Platform.OS === 'android' ? imagem.uri : imagem.uri.replace('file://', ''),
+    };
+
+    formData.append('image', photo);
+    formData.append('product_code', code);
+    formData.append('name', nome);
+    formData.append('category', categoria);
+    formData.append('price', preco);
+    formData.append('quantity', quantidade);
+
+    console.log(photo, 'FORM', formData);
+
+    const config = {
+      headers: {
+        Authorization: `Bearer ${token}`,
+        contentType: 'multipart/form-data',
       },
+    };
+
+    const response = await api.post(
+      '/product', formData, config,
     );
-    const produto = response.data;
-    console.log(produto);
+    // const produto = response.data;
+    console.log(response);
   }
 
 
   useEffect(() => {
   }, []);
 
+  function handleImage() {
+    ImagePicker.showImagePicker(imageOptions, (res) => {
+      if (res.uri) setImagem(res);
+    });
+  }
 
   return (
-    <Container >
+    <Container>
+      <Header style={{ backgroundColor: '#4ABDAC' }}>
+        <StatusBar backgroundColor="#4ABDAC" />
+        <Left>
+          <Button transparent onPress={() => navigation.navigate('Home', { token })}>
+            <Icon name="arrow-back" />
+          </Button>
+        </Left>
+        <Body>
+          <Title>Cadastar Produto</Title>
+        </Body>
 
-    <Header style={{backgroundColor: "#4ABDAC"}}>
-    <Left>
-      <Button transparent onPress={() => navigation.navigate('Home', { token })}>
-        <Icon name="arrow-back" />
-      </Button>
-    </Left>
-    <Body>
-      <Title >Cadastar Produto</Title>
-    </Body>
-  
-  </Header>
+      </Header>
 
-  <Content>
-  <Form>
-            <Item floatingLabel>
-              <Label>Código:</Label>
-              <Input defaultValue={code} onChangeText={(text) => setCode(text)}/>
-            </Item>
+      <Content>
+        <Form>
+          <Item>
+            <Label>Código:</Label>
+            <Input defaultValue={code} keyboardType="numeric" onChangeText={(text) => setCode(text)} />
+          </Item>
 
-            <Item floatingLabel>
-              <Label>Nome:</Label>
-              <Input defaultValue={nome} onChangeText={(text) => setNome(text)}/>
-            </Item>
+          <Item>
+            <Label>Nome:</Label>
+            <Input defaultValue={nome} onChangeText={(text) => setNome(text)} />
+          </Item>
 
-            <Item floatingLabel>
-              <Label>Categoria:</Label>
-              <Input defaultValue={categoria} onChangeText={(text) => setCategoria(text)}/>
-            </Item>
+          <Item>
+            <Label>Categoria:</Label>
+            <Input defaultValue={categoria} onChangeText={(text) => setCategoria(text)} />
+          </Item>
 
-            <Item floatingLabel>
-              <Label>Preço:</Label>
-              <Input textContentType ={Number} defaultValue={preco} onChangeText={(text) => setPreco(text)} />
-            </Item>
+          <Item>
+            <Label>Preço:</Label>
+            <Input
+              textContentType={Number}
+              keyboardType="number-pad"
+              defaultValue={preco}
+              onChangeText={(text) => setPreco(text)}
+            />
+          </Item>
 
-            <Item floatingLabel>
-              <Label>Quantidade:</Label>
-              <Input textContentType ={Number} defaultValue={quantidade} onChangeText={(text) => setQuantidade(text)}/>
-            </Item>
-            
-            <Item floatingLabel last>
-              <Label>Imagem</Label>
-              <Input />
-            </Item>
-          </Form>
-        </Content>
+          <Item>
+            <Label>Quantidade:</Label>
+            <Input
+              keyboardType="number-pad"
+              textContentType={Number}
+              defaultValue={quantidade}
+              onChangeText={(text) => setQuantidade(text)}
+            />
+          </Item>
+          <Image source={imagem} style={styles.image} resizeMode="center" />
+          <Button style={styles.btnImage} onPress={handleImage}>Escolha uma imagem</Button>
+        </Form>
+      </Content>
 
-        <View >
+      <View>
 
-        <Button full success >
-            <Text>Cadastrar</Text>
+        <Button onPress={() => createProduct()}>
+          <Text>Cadastrar</Text>
         </Button>
 
-      </View>   
+      </View>
 
     </Container>
 

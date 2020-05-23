@@ -70,7 +70,7 @@ export default function NovoProduto({ navigation }) {
       <Header style={{ backgroundColor: '#4ABDAC' }}>
         <StatusBar backgroundColor="#4ABDAC" />
         <Left>
-          <Button transparent onPress={() => navigation.navigate('Home', { token })}>
+          <Button color= "#DFDCE3" transparent onPress={() => navigation.navigate('Home', { token })}>
             <Icon name="arrow-back" />
           </Button>
         </Left>

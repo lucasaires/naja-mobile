@@ -1,4 +1,4 @@
-#Thu May 21 11:59:49 BRT 2020
+#Sat May 23 16:00:46 BRT 2020
 base.0=/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/build/intermediates/dex/release/mergeDexRelease/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

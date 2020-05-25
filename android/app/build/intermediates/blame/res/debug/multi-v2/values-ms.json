@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ms/values-ms.xml",
+            "outputFile": "/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ms/values-ms.xml",
             "map": [
                 {
                     "source": "/home/lucasaires/.gradle/caches/transforms-2/files-2.1/88dc1f1e1857ed460c9220ae9bb1061a/appcompat-1.1.0/res/values-ms/values-ms.xml",

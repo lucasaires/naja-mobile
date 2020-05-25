@@ -6,79 +6,79 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="16"
-8-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml
+8-->/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="28" />
-9-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml
+9-->/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:4:5-67
-11-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:4:22-64
+11-->/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:4:5-67
+11-->/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:4:22-64
 12    <uses-permission android:name="android.permission.CAMERA" />
-12-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:5:5-65
-12-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:5:22-62
+12-->/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:5:5-65
+12-->/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:5:22-62
 13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-13-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:6:5-80
-13-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:6:22-78
+13-->/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:6:5-80
+13-->/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:6:22-78
 14
 15    <application
-15-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:8:5-27:19
+15-->/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:8:5-27:19
 16        android:name="com.najamobile.MainApplication"
-16-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:9:7-38
+16-->/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:9:7-38
 17        android:allowBackup="false"
-17-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:13:7-34
+17-->/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:13:7-34
 18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 18-->[androidx.core:core:1.1.0] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/1ebc22047c91feef5a9af0a86929bf31/core-1.1.0/AndroidManifest.xml:24:18-86
 19        android:icon="@drawable/icon"
-19-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:11:7-36
+19-->/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:11:7-36
 20        android:label="@string/app_name"
-20-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:10:7-39
+20-->/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:10:7-39
 21        android:roundIcon="@drawable/icon"
-21-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:12:7-41
+21-->/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:12:7-41
 22        android:theme="@style/AppTheme" >
-22-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:14:7-38
+22-->/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:14:7-38
 23        <activity
-23-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:15:7-25:18
+23-->/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:15:7-25:18
 24            android:name="com.najamobile.MainActivity"
-24-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:16:9-37
+24-->/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:16:9-37
 25            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
-25-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:18:9-86
+25-->/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:18:9-86
 26            android:label="@string/app_name"
-26-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:17:9-41
+26-->/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:17:9-41
 27            android:launchMode="singleTask"
-27-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:19:9-40
+27-->/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:19:9-40
 28            android:windowSoftInputMode="adjustResize" >
-28-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:20:9-51
+28-->/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:20:9-51
 29            <intent-filter>
-29-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:21:9-24:25
+29-->/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:21:9-24:25
 30                <action android:name="android.intent.action.MAIN" />
-30-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:22:13-65
-30-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:22:21-62
+30-->/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:22:13-65
+30-->/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:22:21-62
 31
 32                <category android:name="android.intent.category.LAUNCHER" />
-32-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:23:13-73
-32-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:23:23-70
+32-->/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:23:13-73
+32-->/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:23:23-70
 33            </intent-filter>
 34        </activity>
 35        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-35-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:26:7-84
-35-->/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:26:17-81
+35-->/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:26:7-84
+35-->/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:26:17-81
 36
 37        <provider
-37-->[:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:10:9-18:20
+37-->[:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:10:9-18:20
 38            android:name="com.imagepicker.FileProvider"
-38-->[:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:13-56
+38-->[:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:13-56
 39            android:authorities="com.najamobile.provider"
-39-->[:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:13-60
+39-->[:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:13-60
 40            android:exported="false"
-40-->[:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:13:13-37
+40-->[:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:13:13-37
 41            android:grantUriPermissions="true" >
-41-->[:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:14:13-47
+41-->[:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:14:13-47
 42            <meta-data
-42-->[:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:15:13-17:58
+42-->[:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:15:13-17:58
 43                android:name="android.support.FILE_PROVIDER_PATHS"
-43-->[:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:16:17-67
+43-->[:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:16:17-67
 44                android:resource="@xml/provider_paths" />
-44-->[:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:17:17-55
+44-->[:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:17:17-55
 45        </provider>
 46
 47        <activity

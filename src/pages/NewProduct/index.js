@@ -6,7 +6,7 @@ import {
 import {
   View, StatusBar, Image, Platform,
 } from 'react-native';
-import { Text, Button } from 'react-native-paper';
+import { Text, Button, List } from 'react-native-paper';
 import ImagePicker from 'react-native-image-picker';
 
 import styles from './styles';
@@ -18,6 +18,8 @@ export default function NovoProduto({ navigation }) {
   const [imagem, setImagem] = useState('');
   const [nome, setNome] = useState('');
   const [categoria, setCategoria] = useState('');
+  const [expandedList, setExpandedList] = useState(false);
+  const [categoriaNome, setCategoriaNome] = useState('Todos');
   const [preco, setPreco] = useState(0);
   const [quantidade, setQuantidade] = useState(0);
 
@@ -32,8 +34,8 @@ export default function NovoProduto({ navigation }) {
       uri: Platform.OS === 'android' ? imagem.uri : imagem.uri.replace('file://', ''),
     };
 
-    formData.append('image', photo);
     formData.append('product_code', code);
+    formData.append('image', photo);
     formData.append('name', nome);
     formData.append('category', categoria);
     formData.append('price', preco);
@@ -44,15 +46,20 @@ export default function NovoProduto({ navigation }) {
     const config = {
       headers: {
         Authorization: `Bearer ${token}`,
-        contentType: 'multipart/form-data',
+        'Content-Type': 'multipart/form-data',
       },
     };
 
-    const response = await api.post(
-      '/product', formData, config,
-    );
-    // const produto = response.data;
-    console.log(response);
+  
+      const response = await api.post(
+        '/product', formData, config,)
+
+
+        alert('Produto Cadastrado!')
+   
+  
+    
+
   }
 
 
@@ -93,11 +100,6 @@ export default function NovoProduto({ navigation }) {
           </Item>
 
           <Item>
-            <Label>Categoria:</Label>
-            <Input defaultValue={categoria} onChangeText={(text) => setCategoria(text)} />
-          </Item>
-
-          <Item>
             <Label>Preço:</Label>
             <Input
               textContentType={Number}
@@ -116,6 +118,63 @@ export default function NovoProduto({ navigation }) {
               onChangeText={(text) => setQuantidade(text)}
             />
           </Item>
+
+            <View>
+
+                <List.Section style={styles.inputCategoria}>
+                <List.Accordion
+                  title="Categoria:"
+                  description={categoriaNome}
+                  expanded={expandedList}
+                  onPress={() => setExpandedList(!expandedList)}
+                  
+                >
+                  <List.Item
+                    title="Todos"
+                    onPress={() => {
+                      setCategoria('all');
+                      setCategoriaNome('Todos');
+                      setExpandedList(false);
+                    }}
+                  />
+                  <List.Item
+                    title="Celulares"
+                    onPress={() => {
+                      setCategoria('celular');
+                      setCategoriaNome('Celulares');
+                      setExpandedList(false);
+                    }}
+                  />
+                  <List.Item
+                    title="Eletrodomesticos"
+                    onPress={() => {
+                      setCategoria('eletrodomestico');
+                      setCategoriaNome('Eletrodomesticos');
+                      setExpandedList(false);
+                    }}
+                  />
+                  <List.Item
+                    title="Tv's"
+                    onPress={() => {
+                      setCategoria('tv');
+                      setCategoriaNome('Tvs');
+                      setExpandedList(false);
+                    }}
+                  />
+                  <List.Item
+                    title="Videogames"
+                    onPress={() => {
+                      setCategoria('videogame');
+                      setCategoriaNome('Videogames');
+                      setExpandedList(false);
+                    }}
+                  />
+                </List.Accordion>
+                </List.Section>
+                </View>
+               
+
+
           <Image source={imagem} style={styles.image} resizeMode="center" />
           <Button style={styles.btnImage} onPress={handleImage}>Escolha uma imagem</Button>
         </Form>

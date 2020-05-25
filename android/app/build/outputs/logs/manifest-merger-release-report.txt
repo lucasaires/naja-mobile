@@ -1,19 +1,19 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:1:1-29:12
-INJECTED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:1:1-29:12
-INJECTED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:1:1-29:12
-INJECTED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:1:1-29:12
-MERGED from [:react-native-community_async-storage] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-community_google-signin] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/@react-native-community/google-signin/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-community_masked-view] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-gesture-handler] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-21:12
-MERGED from [:react-native-reanimated] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-safe-area-context] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-screens] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-screens/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-vector-icons] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.react:react-native:0.62.2] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/f009e1936500e7b694ff460c3277366b/jetified-react-native-0.62.2/AndroidManifest.xml:2:1-13:12
+ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:1:1-29:12
+INJECTED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:1:1-29:12
+INJECTED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:1:1-29:12
+INJECTED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:1:1-29:12
+MERGED from [:react-native-community_async-storage] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-community_google-signin] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/@react-native-community/google-signin/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-community_masked-view] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-gesture-handler] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-21:12
+MERGED from [:react-native-reanimated] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-safe-area-context] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-screens] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-screens/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-vector-icons] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.62.2] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/bb60091313fcb52ab5aa9af0e921fbf0/jetified-react-native-0.62.2/AndroidManifest.xml:2:1-13:12
 MERGED from [com.google.android.material:material:1.1.0] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/c73d373508f06dfc05d610458fd852c2/material-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/88dc1f1e1857ed460c9220ae9bb1061a/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/85d3f7a1ce3e589b50069e68f1657999/jetified-play-services-auth-16.0.1/AndroidManifest.xml:17:1-39:12
@@ -68,41 +68,41 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/l
 MERGED from [androidx.print:print:1.0.0] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/5e5ca7684306f144bc63f0ab62ff1f37/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/4452a3d2d10eb8a6115680d35ccf243a/jetified-fbcore-2.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.soloader:annotation:0.8.0] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/cc71ed50256b66bf8da9d410eca4e9a6/annotation-0.8.0/AndroidManifest.xml:2:1-13:12
-INJECTED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:1:1-29:12
-INJECTED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:1:1-29:12
-INJECTED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:1:1-29:12
+INJECTED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:1:1-29:12
+INJECTED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:1:1-29:12
+INJECTED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:1:1-29:12
 	package
-		ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:2:3-27
-		INJECTED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml
-		INJECTED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:2:3-27
+		INJECTED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml
-		ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:1:1-29:12
-		INJECTED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:1:1-29:12
+		INJECTED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml
-		ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:1:1-29:12
-		INJECTED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:1:1-29:12
+		INJECTED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:4:5-67
+ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:4:5-67
 	android:name
-		ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:4:22-64
+		ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:4:22-64
 uses-permission#android.permission.CAMERA
-ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:5:5-65
+ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:5:5-65
 	android:name
-		ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:5:22-62
+		ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:5:22-62
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:6:5-80
+ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:6:5-80
 	android:name
-		ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:6:22-78
+		ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:6:22-78
 application
-ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:8:5-27:19
-MERGED from [:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:9:5-19:19
-MERGED from [:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:9:5-19:19
-MERGED from [com.facebook.react:react-native:0.62.2] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/f009e1936500e7b694ff460c3277366b/jetified-react-native-0.62.2/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.react:react-native:0.62.2] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/f009e1936500e7b694ff460c3277366b/jetified-react-native-0.62.2/AndroidManifest.xml:11:5-20
+ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:8:5-27:19
+MERGED from [:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:9:5-19:19
+MERGED from [:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:9:5-19:19
+MERGED from [com.facebook.react:react-native:0.62.2] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/bb60091313fcb52ab5aa9af0e921fbf0/jetified-react-native-0.62.2/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.62.2] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/bb60091313fcb52ab5aa9af0e921fbf0/jetified-react-native-0.62.2/AndroidManifest.xml:11:5-20
 MERGED from [com.google.android.material:material:1.1.0] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/c73d373508f06dfc05d610458fd852c2/material-1.1.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/c73d373508f06dfc05d610458fd852c2/material-1.1.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/85d3f7a1ce3e589b50069e68f1657999/jetified-play-services-auth-16.0.1/AndroidManifest.xml:22:5-37:19
@@ -124,67 +124,67 @@ MERGED from [com.facebook.soloader:annotation:0.8.0] /home/lucasaires/.gradle/ca
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/1ebc22047c91feef5a9af0a86929bf31/core-1.1.0/AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:10:7-39
+		ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:10:7-39
 	android:roundIcon
-		ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:12:7-41
+		ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:12:7-41
 	android:icon
-		ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:11:7-36
+		ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:11:7-36
 	android:allowBackup
-		ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:13:7-34
+		ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:13:7-34
 	android:theme
-		ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:14:7-38
+		ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:14:7-38
 	android:name
-		ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:9:7-38
+		ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:9:7-38
 activity#com.najamobile.MainActivity
-ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:15:7-25:18
+ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:15:7-25:18
 	android:label
-		ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:17:9-41
+		ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:17:9-41
 	android:launchMode
-		ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:19:9-40
+		ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:19:9-40
 	android:windowSoftInputMode
-		ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:20:9-51
+		ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:20:9-51
 	android:configChanges
-		ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:18:9-86
+		ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:18:9-86
 	android:name
-		ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:16:9-37
+		ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:16:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:21:9-24:25
+ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:21:9-24:25
 action#android.intent.action.MAIN
-ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:22:13-65
+ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:22:13-65
 	android:name
-		ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:22:21-62
+		ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:22:21-62
 category#android.intent.category.LAUNCHER
-ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:23:13-73
+ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:23:13-73
 	android:name
-		ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:23:23-70
+		ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:23:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:26:7-84
+ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:26:7-84
 	android:name
-		ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml:26:17-81
+		ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml:26:17-81
 uses-sdk
-INJECTED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml
-INJECTED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml
-MERGED from [:react-native-community_async-storage] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-community_async-storage] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-community_google-signin] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/@react-native-community/google-signin/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-community_google-signin] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/@react-native-community/google-signin/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-community_masked-view] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-community_masked-view] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-gesture-handler] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-gesture-handler] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-reanimated] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-reanimated] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-safe-area-context] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-safe-area-context] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-screens] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-screens/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-screens] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-screens/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.62.2] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/f009e1936500e7b694ff460c3277366b/jetified-react-native-0.62.2/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.62.2] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/f009e1936500e7b694ff460c3277366b/jetified-react-native-0.62.2/AndroidManifest.xml:7:5-9:41
+INJECTED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-community_async-storage] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_async-storage] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_google-signin] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/@react-native-community/google-signin/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-community_google-signin] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/@react-native-community/google-signin/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-community_masked-view] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_masked-view] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-gesture-handler] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-reanimated] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-safe-area-context] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-safe-area-context] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-screens] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-screens/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-screens] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-screens/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.62.2] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/bb60091313fcb52ab5aa9af0e921fbf0/jetified-react-native-0.62.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.62.2] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/bb60091313fcb52ab5aa9af0e921fbf0/jetified-react-native-0.62.2/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.material:material:1.1.0] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/c73d373508f06dfc05d610458fd852c2/material-1.1.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.1.0] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/c73d373508f06dfc05d610458fd852c2/material-1.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.1.0] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/88dc1f1e1857ed460c9220ae9bb1061a/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
@@ -293,32 +293,32 @@ MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/lucasaires/.gradle/caches/t
 MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/4452a3d2d10eb8a6115680d35ccf243a/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.soloader:annotation:0.8.0] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/cc71ed50256b66bf8da9d410eca4e9a6/annotation-0.8.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.soloader:annotation:0.8.0] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/cc71ed50256b66bf8da9d410eca4e9a6/annotation-0.8.0/AndroidManifest.xml:7:5-9:41
-INJECTED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml
-INJECTED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml
-		ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml
-		INJECTED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml
-		ADDED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml
-		INJECTED from /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/src/main/AndroidManifest.xml
 provider#com.imagepicker.FileProvider
-ADDED from [:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:10:9-18:20
+ADDED from [:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:10:9-18:20
 	android:grantUriPermissions
-		ADDED from [:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:14:13-47
+		ADDED from [:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:14:13-47
 	android:authorities
-		ADDED from [:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:13-60
+		ADDED from [:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:13-60
 	android:exported
-		ADDED from [:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:13:13-37
+		ADDED from [:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:13:13-37
 	android:name
-		ADDED from [:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:13-56
+		ADDED from [:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:13-56
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:15:13-17:58
+ADDED from [:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:15:13-17:58
 	android:resource
-		ADDED from [:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:17:17-55
+		ADDED from [:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:17:17-55
 	android:name
-		ADDED from [:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:16:17-67
+		ADDED from [:react-native-image-picker] /home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:16:17-67
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
 ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/lucasaires/.gradle/caches/transforms-2/files-2.1/85d3f7a1ce3e589b50069e68f1657999/jetified-play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
 	android:excludeFromRecents

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-pt-rPT/values-pt-rPT.xml",
+            "outputFile": "/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-pt-rPT/values-pt-rPT.xml",
             "map": [
                 {
                     "source": "/home/lucasaires/.gradle/caches/transforms-2/files-2.1/2e4ba10f1d918bac62961b42c27119d9/jetified-play-services-base-16.0.1/res/values-pt-rPT/values.xml",

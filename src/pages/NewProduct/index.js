@@ -35,8 +35,11 @@ export default function NovoProduto({ navigation }) {
     };
 
     formData.append('image', photo);
-
-    console.log(photo, 'FORM', formData);
+    formData.append('product_code', code);
+    formData.append('name', nome);
+    formData.append('category', categoria);
+    formData.append('price', preco);
+    formData.append('quantity', quantidade);
 
     const config = {
       headers: {
@@ -45,20 +48,9 @@ export default function NovoProduto({ navigation }) {
     };
 
 
-    await api.post('/product', {body: {'product_code' : code, 
-    'name' : nome ,
-    'category' : categoria,
-    'price': preco,
-    'quantity': quantidade,
-    formData
-    } 
-    }, config).then((res) =>{
-      console.log(res);
-      alert('Produto Cadastrado!');
-    }).catch(err =>{
-      console.log(err);
-    });
+  const res =  await api.post('/product',config, formData);
 
+    console.log(res);
 
     
   }

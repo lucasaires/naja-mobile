@@ -34,8 +34,8 @@ export default function NovoProduto({ navigation }) {
       uri: Platform.OS === 'android' ? imagem.uri : imagem.uri.replace('file://', ''),
     };
 
-    formData.append('product_code', code);
     formData.append('image', photo);
+    formData.append('product_code', code);
     formData.append('name', nome);
     formData.append('category', categoria);
     formData.append('price', preco);
@@ -46,20 +46,15 @@ export default function NovoProduto({ navigation }) {
     const config = {
       headers: {
         Authorization: `Bearer ${token}`,
-        'Content-Type': 'multipart/form-data',
+        'content-type': 'multipart/form-data',
       },
     };
 
-  
-      const response = await api.post(
-        '/product', formData, config,)
+
+    await api.post('/product', formData, config);
 
 
-        alert('Produto Cadastrado!')
-   
-  
-    
-
+    alert('Produto Cadastrado!');
   }
 
 
@@ -77,7 +72,7 @@ export default function NovoProduto({ navigation }) {
       <Header style={{ backgroundColor: '#4ABDAC' }}>
         <StatusBar backgroundColor="#4ABDAC" />
         <Left>
-          <Button color= "#DFDCE3" transparent onPress={() => navigation.navigate('Home', { token })}>
+          <Button color="#DFDCE3" transparent onPress={() => navigation.navigate('Home', { token })}>
             <Icon name="arrow-back" />
           </Button>
         </Left>
@@ -119,60 +114,58 @@ export default function NovoProduto({ navigation }) {
             />
           </Item>
 
-            <View>
+          <View>
 
-                <List.Section style={styles.inputCategoria}>
-                <List.Accordion
-                  title="Categoria:"
-                  description={categoriaNome}
-                  expanded={expandedList}
-                  onPress={() => setExpandedList(!expandedList)}
-                  
-                >
-                  <List.Item
-                    title="Todos"
-                    onPress={() => {
-                      setCategoria('all');
-                      setCategoriaNome('Todos');
-                      setExpandedList(false);
-                    }}
-                  />
-                  <List.Item
-                    title="Celulares"
-                    onPress={() => {
-                      setCategoria('celular');
-                      setCategoriaNome('Celulares');
-                      setExpandedList(false);
-                    }}
-                  />
-                  <List.Item
-                    title="Eletrodomesticos"
-                    onPress={() => {
-                      setCategoria('eletrodomestico');
-                      setCategoriaNome('Eletrodomesticos');
-                      setExpandedList(false);
-                    }}
-                  />
-                  <List.Item
-                    title="Tv's"
-                    onPress={() => {
-                      setCategoria('tv');
-                      setCategoriaNome('Tvs');
-                      setExpandedList(false);
-                    }}
-                  />
-                  <List.Item
-                    title="Videogames"
-                    onPress={() => {
-                      setCategoria('videogame');
-                      setCategoriaNome('Videogames');
-                      setExpandedList(false);
-                    }}
-                  />
-                </List.Accordion>
-                </List.Section>
-                </View>
-               
+            <List.Section style={styles.inputCategoria}>
+              <List.Accordion
+                title="Categoria:"
+                description={categoriaNome}
+                expanded={expandedList}
+                onPress={() => setExpandedList(!expandedList)}
+              >
+                <List.Item
+                  title="Todos"
+                  onPress={() => {
+                    setCategoria('all');
+                    setCategoriaNome('Todos');
+                    setExpandedList(false);
+                  }}
+                />
+                <List.Item
+                  title="Celulares"
+                  onPress={() => {
+                    setCategoria('celular');
+                    setCategoriaNome('Celulares');
+                    setExpandedList(false);
+                  }}
+                />
+                <List.Item
+                  title="Eletrodomesticos"
+                  onPress={() => {
+                    setCategoria('eletrodomestico');
+                    setCategoriaNome('Eletrodomesticos');
+                    setExpandedList(false);
+                  }}
+                />
+                <List.Item
+                  title="Tv's"
+                  onPress={() => {
+                    setCategoria('tv');
+                    setCategoriaNome('Tvs');
+                    setExpandedList(false);
+                  }}
+                />
+                <List.Item
+                  title="Videogames"
+                  onPress={() => {
+                    setCategoria('videogame');
+                    setCategoriaNome('Videogames');
+                    setExpandedList(false);
+                  }}
+                />
+              </List.Accordion>
+            </List.Section>
+          </View>
 
 
           <Image source={imagem} style={styles.image} resizeMode="center" />

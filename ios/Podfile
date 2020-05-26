@@ -81,6 +81,8 @@ target 'najaMobile' do
 
   pod 'react-native-image-picker', :path => '../node_modules/react-native-image-picker'
 
+  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-storage'
+
   target 'najaMobileTests' do
     inherit! :complete
     # Pods for testing

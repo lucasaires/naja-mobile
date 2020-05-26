@@ -7,7 +7,8 @@ import {
 } from 'react-native-paper';
 
 import styles from './styles';
-import api from '../../config/api';
+import api, { setToken } from '../../config/api';
+import { logout } from '../../config/auth';
 
 import Produto from './components/Produto';
 
@@ -17,16 +18,9 @@ export default function Home({ navigation }) {
   const [expandedList, setExpandedList] = useState(false);
   const [categoriaNome, setCategoriaNome] = useState('Todos');
 
-  const { token } = navigation.state.params;
-
   const loadProducts = async () => {
-    const response = await api({
-      method: 'GET',
-      url: `/product/${categoria}`,
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    });
+    await setToken();
+    const response = await api.get(`/product/${categoria}`);
 
     const productsLoaded = response.data;
 
@@ -38,6 +32,7 @@ export default function Home({ navigation }) {
   }, [categoria]);
 
   useEffect(() => {
+
   }, []);
 
   const theme = {
@@ -53,11 +48,6 @@ export default function Home({ navigation }) {
   async function removeProduto(produto) {
     await api.delete(
       `product/${produto.product_code}`,
-      {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      },
     );
     const newProducts = products.filter((item) => item !== produto);
     setProducts(newProducts);
@@ -72,7 +62,14 @@ export default function Home({ navigation }) {
         />
 
         <Appbar.Content title="Catálogo" subtitle="NajaStore" color="#DFDCE3" style={styles.cabecalho} />
-        <Appbar.Action icon="logout-variant" color="#FC4A1A" onPress={() => navigation.navigate('Login')} />
+        <Appbar.Action
+          icon="logout-variant"
+          color="#FC4A1A"
+          onPress={() => {
+            navigation.navigate('Login');
+            logout();
+          }}
+        />
 
       </Appbar.Header>
 
@@ -135,13 +132,12 @@ export default function Home({ navigation }) {
               <Produto
                 id={item.product_code}
                 produto={item}
-                token={token}
                 removeProduto={removeProduto}
               />
             )}
           />
         </SafeAreaView>
-        <FAB icon="plus" style={styles.fab} onPress={() => navigation.navigate('NewProduct', { token })} />
+        <FAB icon="plus" style={styles.fab} onPress={() => navigation.navigate('NewProduct')} />
       </View>
     </PaperProvider>
   );

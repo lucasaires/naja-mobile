@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/lucasaires/Documentos/empresaJr/mobi/mobile-true/naja-mobile/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "/home/arthur/Documentos/workspace/naja-mobile/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/home/lucasaires/.gradle/caches/transforms-2/files-2.1/57b6ed3c59d1807c981d96150d4f1527/media-1.0.0/res/values-v24/values-v24.xml",
+                    "source": "/home/arthur/.gradle/caches/transforms-2/files-2.1/57b6ed3c59d1807c981d96150d4f1527/media-1.0.0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/lucasaires/.gradle/caches/transforms-2/files-2.1/88dc1f1e1857ed460c9220ae9bb1061a/appcompat-1.1.0/res/values-v24/values-v24.xml",
+                    "source": "/home/arthur/.gradle/caches/transforms-2/files-2.1/88dc1f1e1857ed460c9220ae9bb1061a/appcompat-1.1.0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

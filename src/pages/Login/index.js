@@ -6,6 +6,7 @@ import {
   GoogleSigninButton,
 } from '@react-native-community/google-signin';
 
+import { login } from '../../config/auth';
 import api from '../../config/api';
 
 import Logo from '../../assets/naja.png';
@@ -37,9 +38,11 @@ export default function Login({ navigation }) {
         },
       });
 
+      login(user.data.token);
+
       setKey('');
       setLoad(false);
-      navigation.navigate('Home', { token: user.data.token });
+      navigation.navigate('Home');
     } catch (error) {
       console.log(error);
     }

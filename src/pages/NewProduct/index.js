@@ -10,12 +10,12 @@ import { Text, Button, List } from 'react-native-paper';
 import ImagePicker from 'react-native-image-picker';
 
 import styles from './styles';
-import api from '../../config/api';
+import api, { setToken } from '../../config/api';
 import imageOptions from '../../config/imagepicker';
 
 export default function NovoProduto({ navigation }) {
   const [code, setCode] = useState(0);
-  const [imagem, setImagem] = useState('');
+  const [imagem, setImagem] = useState({});
   const [nome, setNome] = useState('');
   const [categoria, setCategoria] = useState('');
   const [expandedList, setExpandedList] = useState(false);
@@ -24,16 +24,16 @@ export default function NovoProduto({ navigation }) {
   const [quantidade, setQuantidade] = useState(0);
 
 
-  
   async function createProduct() {
-    const formData = new FormData();
+    await setToken();
 
     const photo = {
-      name: imagem.fileName,
-      type: imagem.type,
       uri: Platform.OS === 'android' ? imagem.uri : imagem.uri.replace('file://', ''),
+      type: imagem.type,
+      name: imagem.fileName,
     };
 
+    const formData = new FormData();
     formData.append('image', photo);
     formData.append('product_code', code);
     formData.append('name', nome);
@@ -44,15 +44,9 @@ export default function NovoProduto({ navigation }) {
     const config = {
       headers: {
         'content-type': 'multipart/form-data',
-      }
+      },
     };
-
-
-  const res =  await api.post('/product',config, formData);
-
-    console.log(res);
-
-    
+    await api.post('/product', formData, config);
   }
 
 
@@ -81,20 +75,20 @@ export default function NovoProduto({ navigation }) {
       </Header>
 
       <Content>
-      <Form>
+        <Form>
           <Item>
             <Label>Código:</Label>
-            <Input 
-            keyboardType="numeric" 
-            onChangeText={(text) => setCode(Number(text))} 
+            <Input
+              keyboardType="numeric"
+              onChangeText={(text) => setCode(Number(text))}
             />
           </Item>
 
           <Item>
             <Label>Nome:</Label>
-            <Input 
-            defaultValue={nome} 
-            onChangeText={(text) => setNome(text)} 
+            <Input
+              defaultValue={nome}
+              onChangeText={(text) => setNome(text)}
             />
           </Item>
 
@@ -123,7 +117,7 @@ export default function NovoProduto({ navigation }) {
                 expanded={expandedList}
                 onPress={() => setExpandedList(!expandedList)}
               >
-              
+
                 <List.Item
                   title="Celulares"
                   onPress={() => {

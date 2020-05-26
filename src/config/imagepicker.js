@@ -3,11 +3,10 @@ const imagepicker = {
   cancelButtonTitle: 'Cancelar',
   takePhotoButtonTitle: 'Câmera',
   chooseFromLibraryButtonTitle: 'Galeria',
-  quality: 0.4,
   storageOptions: {
     skipBackup: true,
     noData: true,
-    path: '../../tmp/uploads',
+    path: 'naja-mobile',
   },
 };
 

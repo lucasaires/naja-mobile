@@ -1,5 +1,4 @@
 import { StyleSheet } from 'react-native';
-import { Left } from 'native-base';
 
 const styles = StyleSheet.create({
   fab: {

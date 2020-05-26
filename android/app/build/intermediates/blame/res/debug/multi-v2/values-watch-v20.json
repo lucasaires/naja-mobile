@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/arthur/Documentos/workspace/naja-mobile/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "/home/lucasaires/Documentos/empresaJr/mobile/naja-mobile/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "/home/arthur/.gradle/caches/transforms-2/files-2.1/88dc1f1e1857ed460c9220ae9bb1061a/appcompat-1.1.0/res/values-watch-v20/values-watch-v20.xml",
+                    "source": "/home/lucasaires/.gradle/caches/transforms-2/files-2.1/88dc1f1e1857ed460c9220ae9bb1061a/appcompat-1.1.0/res/values-watch-v20/values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/home/arthur/.gradle/caches/transforms-2/files-2.1/f6ba5ed38262723c37ed1bf1477630c1/jetified-play-services-auth-16.0.1/res/values-watch-v20/values.xml",
+                    "source": "/home/lucasaires/.gradle/caches/transforms-2/files-2.1/85d3f7a1ce3e589b50069e68f1657999/jetified-play-services-auth-16.0.1/res/values-watch-v20/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",

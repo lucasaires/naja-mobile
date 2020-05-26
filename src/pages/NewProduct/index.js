@@ -23,8 +23,8 @@ export default function NovoProduto({ navigation }) {
   const [preco, setPreco] = useState(0);
   const [quantidade, setQuantidade] = useState(0);
 
-  const { token } = navigation.state.params;
 
+  
   async function createProduct() {
     const formData = new FormData();
 
@@ -35,26 +35,32 @@ export default function NovoProduto({ navigation }) {
     };
 
     formData.append('image', photo);
-    formData.append('product_code', code);
-    formData.append('name', nome);
-    formData.append('category', categoria);
-    formData.append('price', preco);
-    formData.append('quantity', quantidade);
 
     console.log(photo, 'FORM', formData);
 
     const config = {
       headers: {
-        Authorization: `Bearer ${token}`,
         'content-type': 'multipart/form-data',
-      },
+      }
     };
 
 
-    await api.post('/product', formData, config);
+    await api.post('/product', {body: {'product_code' : code, 
+    'name' : nome ,
+    'category' : categoria,
+    'price': preco,
+    'quantity': quantidade,
+    formData
+    } 
+    }, config).then((res) =>{
+      console.log(res);
+      alert('Produto Cadastrado!');
+    }).catch(err =>{
+      console.log(err);
+    });
 
 
-    alert('Produto Cadastrado!');
+    
   }
 
 
@@ -72,7 +78,7 @@ export default function NovoProduto({ navigation }) {
       <Header style={{ backgroundColor: '#4ABDAC' }}>
         <StatusBar backgroundColor="#4ABDAC" />
         <Left>
-          <Button color="#DFDCE3" transparent onPress={() => navigation.navigate('Home', { token })}>
+          <Button color="#DFDCE3" transparent onPress={() => navigation.navigate('Home')}>
             <Icon name="arrow-back" />
           </Button>
         </Left>
@@ -83,24 +89,28 @@ export default function NovoProduto({ navigation }) {
       </Header>
 
       <Content>
-        <Form>
+      <Form>
           <Item>
             <Label>Código:</Label>
-            <Input defaultValue={code} keyboardType="numeric" onChangeText={(text) => setCode(text)} />
+            <Input 
+            keyboardType="numeric" 
+            onChangeText={(text) => setCode(Number(text))} 
+            />
           </Item>
 
           <Item>
             <Label>Nome:</Label>
-            <Input defaultValue={nome} onChangeText={(text) => setNome(text)} />
+            <Input 
+            defaultValue={nome} 
+            onChangeText={(text) => setNome(text)} 
+            />
           </Item>
 
           <Item>
             <Label>Preço:</Label>
             <Input
-              textContentType={Number}
               keyboardType="number-pad"
-              defaultValue={preco}
-              onChangeText={(text) => setPreco(text)}
+              onChangeText={(text) => setPreco(Number(text))}
             />
           </Item>
 
@@ -108,9 +118,7 @@ export default function NovoProduto({ navigation }) {
             <Label>Quantidade:</Label>
             <Input
               keyboardType="number-pad"
-              textContentType={Number}
-              defaultValue={quantidade}
-              onChangeText={(text) => setQuantidade(text)}
+              onChangeText={(text) => setQuantidade(Number(text))}
             />
           </Item>
 
@@ -123,14 +131,7 @@ export default function NovoProduto({ navigation }) {
                 expanded={expandedList}
                 onPress={() => setExpandedList(!expandedList)}
               >
-                <List.Item
-                  title="Todos"
-                  onPress={() => {
-                    setCategoria('all');
-                    setCategoriaNome('Todos');
-                    setExpandedList(false);
-                  }}
-                />
+              
                 <List.Item
                   title="Celulares"
                   onPress={() => {

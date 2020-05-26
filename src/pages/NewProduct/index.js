@@ -4,60 +4,55 @@ import {
   Left, Content, Form, Item, Label, Input,
 } from 'native-base';
 import {
-  View, StatusBar, Image, Platform,
+  View, StatusBar, Image,
 } from 'react-native';
 import { Text, Button, List } from 'react-native-paper';
-import ImagePicker from 'react-native-image-picker';
+// import ImagePicker from 'react-native-image-picker';
 
 import styles from './styles';
-import api, { setToken } from '../../config/api';
-import imageOptions from '../../config/imagepicker';
+// import imageOptions from '../../config/imagepicker';
+import api from '../../config/api';
 
 export default function NovoProduto({ navigation }) {
   const [code, setCode] = useState(0);
-  const [imagem, setImagem] = useState({});
+  // const [imagem, setImagem] = useState({});
   const [nome, setNome] = useState('');
   const [categoria, setCategoria] = useState('');
   const [expandedList, setExpandedList] = useState(false);
-  const [categoriaNome, setCategoriaNome] = useState('Todos');
+  const [categoriaNome, setCategoriaNome] = useState('Escolha');
   const [preco, setPreco] = useState(0);
   const [quantidade, setQuantidade] = useState(0);
 
 
   async function createProduct() {
-    await setToken();
-
-    const photo = {
-      uri: Platform.OS === 'android' ? imagem.uri : imagem.uri.replace('file://', ''),
-      type: imagem.type,
-      name: imagem.fileName,
+    const formData = {
+      product_code: code,
+      name: nome,
+      category: categoria,
+      price: preco,
+      quantity: quantidade,
     };
 
-    const formData = new FormData();
-    formData.append('image', photo);
-    formData.append('product_code', code);
-    formData.append('name', nome);
-    formData.append('category', categoria);
-    formData.append('price', preco);
-    formData.append('quantity', quantidade);
-
-    const config = {
+    /**   const config = {
       headers: {
-        'content-type': 'multipart/form-data',
+        'Accept': 'application/json',
+        'content-type': 'application/json',
       },
-    };
-    await api.post('/product', formData, config);
+}; */
+
+    await api.post('/product', formData);
+    navigation.navigate('Home');
   }
 
 
   useEffect(() => {
   }, []);
 
-  function handleImage() {
+  /** function handleImage() {
     ImagePicker.showImagePicker(imageOptions, (res) => {
       if (res.uri) setImagem(res);
     });
-  }
+} */
 
   return (
     <Container>
@@ -153,10 +148,6 @@ export default function NovoProduto({ navigation }) {
               </List.Accordion>
             </List.Section>
           </View>
-
-
-          <Image source={imagem} style={styles.image} resizeMode="center" />
-          <Button style={styles.btnImage} onPress={handleImage}>Escolha uma imagem</Button>
         </Form>
       </Content>
 
